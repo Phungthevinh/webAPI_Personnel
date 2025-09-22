@@ -84,7 +84,8 @@ namespace WebAPI.Controllers
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var claims = new[]
             {
-                new Claim(name, email)
+                new Claim(ClaimTypes.Name, name),
+                new Claim(ClaimTypes.Email, email),
             };
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -100,5 +101,40 @@ namespace WebAPI.Controllers
             return tokenString;
         }
 
+        public async Task<IResult> laythongtinnguoidung(ClaimsPrincipal user, NpgsqlDataSource db)
+        {
+            if (!user.Identity.IsAuthenticated)
+            {
+                return Results.Unauthorized();
+            }
+            var userName = user.Identity.Name;
+            await using var connection = await db.OpenConnectionAsync();
+            await using var command = new NpgsqlCommand("SELECT id, username, email, full_name from Users where username = $1", connection) 
+            {
+                Parameters =
+                {
+                    new() { Value = userName },
+                    
+                }
+            };
+            await using var result = await command.ExecuteReaderAsync();
+            if (!await result.ReadAsync())
+            {
+                
+                return Results.Unauthorized();
+            }
+            var id = result.GetInt32(0);
+            var username = result.GetString(1);
+            var email = result.GetString(2);
+            var name = result.GetString(3);
+
+            return Results.Ok(new
+            {
+                _id = id,
+                _username = username,
+                _email = email,
+                _name = name
+            });
+        }
     }
 }

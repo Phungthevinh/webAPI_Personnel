@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
+using System.Security.Claims;
 using WebAPI.Controllers;
 using WebAPI.models;
 
@@ -25,7 +26,12 @@ namespace WebAPI.routers
                 return tokenHandler.dangnhap(dangnhap, keyJWT, db, Issuer, Audience);
             });
 
-            app.MapGet("/test", [Authorize] () => "hello");
+            //lấy ra thông tin sau khi đăng nhập
+            app.MapGet("/thong-tin-sau-khi-dang-nhap", [Authorize] (ClaimsPrincipal user) =>
+            {
+                UsersControlers tokenHandler = new UsersControlers();
+                return tokenHandler.laythongtinnguoidung(user, db);
+            });
         }
     }
 }

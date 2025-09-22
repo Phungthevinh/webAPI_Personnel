@@ -48,13 +48,67 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_2",
-    "RelativePath": "test",
-    "HttpMethod": "GET",
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__2",
+    "RelativePath": "khoa-ma-giam-gia",
+    "HttpMethod": "PATCH",
     "IsController": false,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "discount_codes",
+        "Type": "WebAPI.models.Discount_Codes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__1",
+    "RelativePath": "kich-hoat-ma-giam-gia",
+    "HttpMethod": "PATCH",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discount_codes",
+        "Type": "WebAPI.models.Discount_Codes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__0",
+    "RelativePath": "them-moi-ma-giam-gia",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discount_codes",
+        "Type": "WebAPI.models.Discount_Codes",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.String",
@@ -85,6 +139,22 @@
         "MediaTypes": [
           "text/plain"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__2",
+    "RelativePath": "thong-tin-sau-khi-dang-nhap",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

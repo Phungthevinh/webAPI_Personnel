@@ -10,8 +10,8 @@ using WebAPI.routers;
 
 
 
-
-
+Console.InputEncoding = Encoding.UTF8;
+Console.OutputEncoding = Encoding.UTF8;
 var builder = WebApplication.CreateBuilder(args);
 
 //lấy ra các thuộc tính reong file appsetting.json

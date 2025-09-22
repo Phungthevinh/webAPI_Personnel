@@ -34,8 +34,7 @@
               "RelativeToolTip": "models\\Users.cs",
               "ViewState": "AgIAADcAAAAAAAAAAADwvwYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T02:47:27.005Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T02:47:27.005Z"
             },
             {
               "$type": "Document",
@@ -43,9 +42,9 @@
               "Title": "UsersControlers.cs",
               "DocumentMoniker": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs",
               "RelativeDocumentMoniker": "Controllers\\UsersControlers.cs",
-              "ToolTip": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs*",
-              "RelativeToolTip": "Controllers\\UsersControlers.cs*",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAgwIEAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs",
+              "RelativeToolTip": "Controllers\\UsersControlers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T02:46:25.095Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "routers\\UsersRouter.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAD4vx0AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T01:59:38.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T01:59:38.213Z"
             }
           ]
         }

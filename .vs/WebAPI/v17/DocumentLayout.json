@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\webBEc#\\WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\routers\\kol_profilesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\kol_profilesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi\\controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,32 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\models\\Users.cs",
-              "RelativeDocumentMoniker": "models\\Users.cs",
-              "ToolTip": "D:\\webBEc#\\WebAPI\\models\\Users.cs",
-              "RelativeToolTip": "models\\Users.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAADwvwYAAAARAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Discount_CodesRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\routers\\Discount_CodesRouter.cs",
+              "RelativeDocumentMoniker": "routers\\Discount_CodesRouter.cs",
+              "ToolTip": "D:\\webBEc#\\WebAPI\\routers\\Discount_CodesRouter.cs",
+              "RelativeToolTip": "routers\\Discount_CodesRouter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T02:47:27.005Z",
+              "WhenOpened": "2025-09-22T06:39:22.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersControlers.cs",
-              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersControlers.cs",
-              "ToolTip": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs",
-              "RelativeToolTip": "Controllers\\UsersControlers.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAwIoAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "KOL_ProfilesRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\routers\\KOL_ProfilesRouter.cs",
+              "RelativeDocumentMoniker": "routers\\KOL_ProfilesRouter.cs",
+              "ToolTip": "D:\\webBEc#\\WebAPI\\routers\\KOL_ProfilesRouter.cs",
+              "RelativeToolTip": "routers\\KOL_ProfilesRouter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T02:46:25.095Z",
+              "WhenOpened": "2025-09-22T06:39:19.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "D:\\webBEc#\\WebAPI\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswBoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-09-22T04:21:53.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\webBEc#\\WebAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADEAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T04:18:21.603Z",
               "EditorCaption": ""
             },
             {
@@ -58,9 +96,22 @@
               "RelativeDocumentMoniker": "routers\\UsersRouter.cs",
               "ToolTip": "D:\\webBEc#\\WebAPI\\routers\\UsersRouter.cs",
               "RelativeToolTip": "routers\\UsersRouter.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAD4vx0AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAD4vx0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T01:59:38.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsersControlers.cs",
+              "DocumentMoniker": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersControlers.cs",
+              "ToolTip": "D:\\webBEc#\\WebAPI\\Controllers\\UsersControlers.cs",
+              "RelativeToolTip": "Controllers\\UsersControlers.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-22T02:46:25.095Z",
               "EditorCaption": ""
             }
           ]

@@ -1,29 +1,28 @@
-﻿
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.Extensions.Options;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.IdentityModel.Tokens.Experimental;
 using Npgsql;
 using System.Text;
 using WebAPI.routers;
 
-
-
 Console.InputEncoding = Encoding.UTF8;
 Console.OutputEncoding = Encoding.UTF8;
+
 var builder = WebApplication.CreateBuilder(args);
 
-//lấy ra các thuộc tính reong file appsetting.json
+// Lấy config từ appsettings.json hoặc env
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var key = builder.Configuration["Jwt:Key"];
-var IssuerIssuer = builder.Configuration["Jwt:Issuer"];
-var Audience = builder.Configuration["Jwt:Audience"];
+var issuer = builder.Configuration["Jwt:Issuer"];
+var audience = builder.Configuration["Jwt:Audience"];
 
-//kết nối với csdl
-await using var dataSource = NpgsqlDataSource.Create(connectionString);
+// Đăng ký NpgsqlDataSource vào DI container
+builder.Services.AddSingleton<NpgsqlDataSource>(_ =>
+{
+    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
+    return dataSourceBuilder.Build();
+});
 
-//cấu hình xác thực
+// Cấu hình xác thực JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
@@ -33,22 +32,21 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = IssuerIssuer,
-            ValidAudience = Audience,
+            ValidIssuer = issuer,
+            ValidAudience = audience,
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
         };
     });
+
 builder.Services.AddAuthorization();
 
-//khởi tạo ứng dụng
 var app = builder.Build();
-
 
 app.UseAuthentication();
 app.UseAuthorization();
 
-routers router = new routers(app, dataSource, key, IssuerIssuer, Audience);
-
-
+// Inject dataSource từ DI thay vì tạo tay
+var dataSource = app.Services.GetRequiredService<NpgsqlDataSource>();
+routers router = new routers(app, dataSource, key, issuer, audience);
 
 app.Run();

@@ -1164,11 +1164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\webBEc#\\WebAPI\\WebAPI.csproj",
+      "projectUniqueName": "D:\\webBEc#\\webAPI_Personnel\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "D:\\webBEc#\\WebAPI\\WebAPI.csproj",
+      "projectPath": "D:\\webBEc#\\webAPI_Personnel\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "D:\\webBEc#\\WebAPI\\obj\\",
+      "outputPath": "D:\\webBEc#\\webAPI_Personnel\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

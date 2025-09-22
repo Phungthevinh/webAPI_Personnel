@@ -1,0 +1,92 @@
+[
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__0",
+    "RelativePath": "dangky",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "WebAPI.models.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__1",
+    "RelativePath": "dangNhap",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dangnhap",
+        "Type": "WebAPI.models.DangNhap",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
+    "RelativePath": "test",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.KOL_ProfilesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
+    "Method": "\u003C.ctor\u003Eb__0",
+    "RelativePath": "them-thong-tin-KOL",
+    "HttpMethod": "PATCH",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KOL",
+        "Type": "WebAPI.models.KOL_Profiles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

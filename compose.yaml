@@ -2,12 +2,9 @@
   app:
     build:
         context: .  
-        dockerfile: Dockerfile
-    image: webapi:dev
-    container_name: webapi_container
     ports:
       - 8080:8080
-    working_dir: /app
+    # working_dir: /app
     environment:
       POSTGRES_USER: mangerPerson
       POSTGRES_PASSWORD: vinh2711

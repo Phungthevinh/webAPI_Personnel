@@ -32,6 +32,8 @@ namespace WebAPI.routers
                 UsersControlers tokenHandler = new UsersControlers();
                 return tokenHandler.laythongtinnguoidung(user, db);
             });
+
+            app.MapGet("/test", () => "xin chao");
         }
     }
 }

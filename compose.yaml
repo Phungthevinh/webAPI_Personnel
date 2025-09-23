@@ -1,0 +1,32 @@
+﻿services:
+  app:
+    build:
+        context: .  
+        dockerfile: Dockerfile
+    image: webapi:dev
+    container_name: webapi_container
+    ports:
+      - 8080:8080
+    working_dir: /app
+    environment:
+      POSTGRES_USER: mangerPerson
+      POSTGRES_PASSWORD: vinh2711
+      POSTGRES_DB: mangerPerson
+    depends_on:
+        - postgres
+
+
+  postgres:
+    image: postgres:latest
+    container_name: postgres_container
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: mangerPerson
+      POSTGRES_PASSWORD: vinh2711
+      POSTGRES_DB: mangerPerson
+    ports:
+        - "5432:5432"
+
+volumes:
+  pgdata:

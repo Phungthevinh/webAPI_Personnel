@@ -42,8 +42,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-23T02:50:26.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-23T02:50:26.714Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T04:18:21.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T04:18:21.603Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "routers\\UsersRouter.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAD4vx0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T01:59:38.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T01:59:38.213Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Controllers\\UsersControlers.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwB0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T02:46:25.095Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T02:46:25.095Z"
             }
           ]
         }

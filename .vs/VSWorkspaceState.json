@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\routers"
   ],
+  "SelectedNode": "\\routers\\Discount_CodesRouter.cs",
   "PreviewInSolutionExplorer": false
 }

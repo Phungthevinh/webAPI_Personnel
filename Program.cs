@@ -16,11 +16,7 @@ var issuer = builder.Configuration["Jwt:Issuer"];
 var audience = builder.Configuration["Jwt:Audience"];
 
 // Đăng ký NpgsqlDataSource vào DI container
-builder.Services.AddSingleton<NpgsqlDataSource>(_ =>
-{
-    var dataSourceBuilder = new NpgsqlDataSourceBuilder(connectionString);
-    return dataSourceBuilder.Build();
-});
+await using var dataSource = NpgsqlDataSource.Create(connectionString);
 
 // Cấu hình xác thực JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -46,7 +42,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 // Inject dataSource từ DI thay vì tạo tay
-var dataSource = app.Services.GetRequiredService<NpgsqlDataSource>();
+
 routers router = new routers(app, dataSource, key, issuer, audience);
 
 app.Run();

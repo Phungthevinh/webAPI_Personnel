@@ -14,7 +14,7 @@
 
 
   postgres:
-    image: postgres:latest
+    image: postgres
     container_name: postgres_container
     volumes:
       - pgdata:/var/lib/postgresql/data

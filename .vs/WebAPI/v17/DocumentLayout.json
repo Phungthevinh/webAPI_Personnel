@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "compose.yaml",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\compose.yaml",
               "RelativeDocumentMoniker": "compose.yaml",
               "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\compose.yaml",
               "RelativeToolTip": "compose.yaml",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAUwA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2025-09-24T04:13:33.541Z",
               "EditorCaption": ""
@@ -72,8 +72,7 @@
               "RelativeToolTip": "routers\\KOL_ProfilesRouter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T06:39:19.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T06:39:19.727Z"
             },
             {
               "$type": "Document",
@@ -85,8 +84,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAIwC0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T04:18:21.603Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T04:18:21.603Z"
             },
             {
               "$type": "Document",
@@ -98,8 +96,7 @@
               "RelativeToolTip": "routers\\UsersRouter.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAApwA4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-22T01:59:38.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T01:59:38.213Z"
             },
             {
               "$type": "Document",

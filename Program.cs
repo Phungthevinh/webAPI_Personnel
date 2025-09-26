@@ -35,7 +35,7 @@ builder.Services.AddCors(options =>
 await using var dataSource = NpgsqlDataSource.Create(connectionString);
 
 //khởi tạo model GPT
-builder.Services.AddSingleton<ChatClient>(serviceProvider =>
+builder.Services.AddScoped<ChatClient>(serviceProvider =>
 {
     var apiKey = builder.Configuration["OpenAI:Key"];
     

@@ -1,5 +1,27 @@
 [
   {
+    "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
+    "RelativePath": "chatAI",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatai",
+        "Type": "WebAPI.models.chatAI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C.ctor\u003Eb__0",
     "RelativePath": "dangky",

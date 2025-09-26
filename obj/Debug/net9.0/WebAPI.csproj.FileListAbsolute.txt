@@ -113,3 +113,6 @@ D:\webBEc#\webAPI_Personnel\obj\Debug\net9.0\refint\WebAPI.dll
 D:\webBEc#\webAPI_Personnel\obj\Debug\net9.0\WebAPI.pdb
 D:\webBEc#\webAPI_Personnel\obj\Debug\net9.0\WebAPI.genruntimeconfig.cache
 D:\webBEc#\webAPI_Personnel\obj\Debug\net9.0\ref\WebAPI.dll
+D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\OpenAI.dll
+D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\System.ClientModel.dll
+D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\System.Memory.Data.dll

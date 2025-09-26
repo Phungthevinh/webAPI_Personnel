@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
+using OpenAI.Chat;
 using System.Text;
 using WebAPI.routers;
 
@@ -17,6 +19,15 @@ var audience = builder.Configuration["Jwt:Audience"];
 
 // Đăng ký NpgsqlDataSource vào DI container
 await using var dataSource = NpgsqlDataSource.Create(connectionString);
+
+//khởi tạo model GPT
+builder.Services.AddSingleton<ChatClient>(serviceProvider =>
+{
+    var apiKey = builder.Configuration["OpenAI:Key"];
+    
+    var model = "gpt-4.1";
+    return new ChatClient(model, apiKey);
+});
 
 // Cấu hình xác thực JWT
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)

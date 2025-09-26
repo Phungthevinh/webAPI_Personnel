@@ -10,6 +10,7 @@ namespace WebAPI.routers
             UsersRouter users = new UsersRouter(app, db, keyJWT, Issuer, Audience);
             KOL_ProfilesRouter KOI_Profiles = new KOL_ProfilesRouter(app, db);
             Discount_CodesRouter discount_CodesRouter = new Discount_CodesRouter(app, db);
+            chatAIRouter ChatAIRouter = new chatAIRouter(app, db);
         }
     }
 }

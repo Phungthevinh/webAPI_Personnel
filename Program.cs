@@ -25,7 +25,9 @@ builder.Services.AddCors(options =>
                       builder =>
                       {
                           builder.WithOrigins("https://chatdt.netlify.app",
-                                              "http://www.contoso.com");
+                                              "http://www.contoso.com")
+                          .AllowAnyHeader()
+                          .AllowAnyMethod();
                       });
 });
 
@@ -60,6 +62,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+app.UseCors(MyAllowSpecificOrigins);
 
 app.UseAuthentication();
 app.UseAuthorization();

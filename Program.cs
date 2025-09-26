@@ -9,6 +9,8 @@ using WebAPI.routers;
 Console.InputEncoding = Encoding.UTF8;
 Console.OutputEncoding = Encoding.UTF8;
 
+const string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Lấy config từ appsettings.json hoặc env
@@ -16,6 +18,16 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 var key = builder.Configuration["Jwt:Key"];
 var issuer = builder.Configuration["Jwt:Issuer"];
 var audience = builder.Configuration["Jwt:Audience"];
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      builder =>
+                      {
+                          builder.WithOrigins("https://chatdt.netlify.app",
+                                              "http://www.contoso.com");
+                      });
+});
 
 // Đăng ký NpgsqlDataSource vào DI container
 await using var dataSource = NpgsqlDataSource.Create(connectionString);

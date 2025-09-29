@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
     "\\routers"
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\routers\\chatAIRouter.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -6,6 +6,8 @@ using OpenAI.Chat;
 using System.Text;
 using WebAPI.routers;
 
+DotNetEnv.Env.Load();
+
 Console.InputEncoding = Encoding.UTF8;
 Console.OutputEncoding = Encoding.UTF8;
 
@@ -37,7 +39,7 @@ await using var dataSource = NpgsqlDataSource.Create(connectionString);
 //khởi tạo model GPT
 builder.Services.AddSingleton<ChatClient>(serviceProvider =>
 {
-    var apiKey = builder.Configuration["OpenAI:Key"];
+    var apiKey = System.Environment.GetEnvironmentVariable("OPEN_AI_KEY"); ;
     
     var model = "gpt-4.1";
     return new ChatClient(model, apiKey);

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Controllers",
     "\\routers"
   ],
-  "SelectedNode": "\\routers\\chatAIRouter.cs",
+  "SelectedNode": "\\Controllers\\chatAIController.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -39,7 +39,7 @@ await using var dataSource = NpgsqlDataSource.Create(connectionString);
 //khởi tạo model GPT
 builder.Services.AddSingleton<ChatClient>(serviceProvider =>
 {
-    var apiKey = System.Environment.GetEnvironmentVariable("OPEN_AI_KEY"); ;
+    var apiKey = System.Environment.GetEnvironmentVariable("OPEN_AI_KEY");
     
     var model = "gpt-4.1";
     return new ChatClient(model, apiKey);

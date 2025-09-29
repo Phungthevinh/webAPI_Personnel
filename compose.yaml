@@ -9,6 +9,8 @@
       POSTGRES_USER: mangerPerson
       POSTGRES_PASSWORD: vinh2711
       POSTGRES_DB: mangerPerson
+    env_file:
+      - .env
     depends_on:
         - postgres
 

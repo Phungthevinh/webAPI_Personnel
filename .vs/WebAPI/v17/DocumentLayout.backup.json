@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAADoAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-30T09:07:12.919Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "compose.yaml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-09-30T08:04:59.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T08:04:59.107Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "models\\Users.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAswDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T06:23:41.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T06:23:41.162Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": ".env",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-09-30T03:51:39.306Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T03:51:39.306Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Controllers\\chatAIController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T04:00:20.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T04:00:20.072Z"
             }
           ]
         }

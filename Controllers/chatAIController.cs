@@ -1,4 +1,4 @@
-﻿using DocumentFormat.OpenXml.Packaging;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using OpenAI;
 using OpenAI.Chat;
@@ -24,10 +24,7 @@ namespace WebAPI.Controllers
             Nếu thông tin không có trong tài liệu, hãy trả lời chính xác là: 'Thông tin này tôi không nắm rõ!'
             Nghiêm cấm tuyệt đối việc sử dụng kiến thức bên ngoài hoặc tự suy diễn.
             lưu ý chỉ đưa ra tối đa 5 gạch đầu dòng cho các ý";
-            // Get a stream of the wordprocessing document
-            using (FileStream fileStream = new FileStream("input.docx", FileMode.Open))
-            // Open a WordprocessingDocument for read-only access based on a stream.
-            using (WordprocessingDocument wordDocument = WordprocessingDocument.Open(fileStream, false)) ;
+            
                 var chatMessages = new List<ChatMessage>() {
                 ChatMessage.CreateSystemMessage(systemPrompt),
                 ChatMessage.CreateUserMessage(message.Input)

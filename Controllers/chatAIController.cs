@@ -128,11 +128,14 @@ Phần IX: Chương trình khuyến mãi, loyal
             --- KẾT THÚC BỘ QUY TRÌNH ---
         ";
             var chatMessages = new List<ChatMessage>() {
-                ChatMessage.CreateSystemMessage(systemPrompt),
+                ChatMessage.CreateSystemMessage("Phần I: Tuyển nhân sự\r\n1. Lập kế hoạch và Đăng tin tuyển dụng\r\n•\tNhận yêu cầu tuyển dụng: Tiếp nhận thông tin chi tiết về vị trí cần tuyển từ phòng ban.\r\n•\tXây dựng bài đăng tuyển dụng: Soạn thảo nội dung tin tuyển dụng rõ ràng, hấp dẫn và đầy đủ, bao gồm mô tả công việc, yêu cầu ứng viên và quyền lợi. Tin đăng này cần được duyệt trước khi đăng tải.\r\n2. Tiếp nhận và Sàng lọc hồ sơ ứng viên\r\n•\tTiếp nhận hồ sơ: Nhận hồ sơ xin việc, sơ yếu lý lịch đầy đủ, hồ sơ năng lực (nếu có) và các video giới thiệu (nếu ứng viên cung cấp).\r\n•\tSàng lọc và đánh giá ban đầu: Xem xét các hồ sơ để chọn ra những ứng viên tiềm năng phù hợp với yêu cầu của vị trí.\r\n•\tỨng viên phải nộp hồ sơ xin việc, sơ yếu lý lịch đầy đủ.\r\n3. Phỏng vấn và Đánh giá chuyên sâu\r\n•  Lên lịch phỏng vấn: Sắp xếp thời gian và địa điểm phỏng vấn phù hợp với các ứng viên đã được chọn.\r\n•  Tiến hành phỏng vấn và đánh giá: Thực hiện phỏng vấn chuyên sâu để đánh giá kiến thức, kỹ năng và mức độ phù hợp của ứng viên với vị trí và văn hóa công ty.\r\n•  Đưa ra quyết định: Dựa trên kết quả phỏng vấn, đánh giá ứng viên.\r\n•  Thông báo kết quả:\r\n•\tNếu ứng viên đạt, tiến hành gửi thư mời nhận việc hoặc thông báo chi tiết về ngày bắt đầu làm.\r\n•\tNếu ứng viên không đạt, gửi lời cảm ơn và thông báo kết quả phỏng vấn một cách lịch sự.\r\n4. Hỗ trợ hòa nhập \r\n•\tTiếp nhận và định hướng: Hỗ trợ nhân sự mới trong quá trình hòa nhập, giới thiệu về công ty, văn hóa và các quy định nội bộ.\r\n•\tHỗ trợ ban đầu: Cung cấp các thông tin cần thiết và giải đáp thắc mắc để nhân sự mới có thể bắt đầu công việc một cách thuận lợi.\r\n5. Đánh giá hiệu suất và Chăm sóc định kỳ\r\n•\tĐối với nhân viên văn phòng, thực hiện đánh giá sau 15 ngày: Thực hiện đánh giá hiệu suất của nhân sự mới sau 15 ngày làm việc, lặp lại 3 lần để đảm bảo họ thích nghi tốt.\r\n•\tĐối với nhân viên thị trường:\r\no\tGửi tin nhắn quan tâm vào sáng thứ Hai hàng tuần để duy trì kết nối.\r\no\tThực hiện một cuộc gọi mỗi tháng để nắm bắt tình hình và lắng nghe những khó khăn, đề xuất từ nhân sự.\r\n"),
                 ChatMessage.CreateUserMessage(message.Input)
             };
-          
-            ChatCompletion completion = await _chatClient.CompleteChatAsync(chatMessages);
+
+            ChatCompletion completion = await _chatClient.CompleteChatAsync(messages: chatMessages, new ChatCompletionOptions
+            {
+                Temperature = 0
+            });
             return Results.Ok(new { response = completion.Content[0].Text });
         }
     }

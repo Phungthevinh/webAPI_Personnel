@@ -137,6 +137,11 @@ lưu ý chỉ đưa ra tối đa 5 gạch đầu dòng cho các ý
             {
                 Temperature = 0
             });
+            foreach (var msg in chatMessages)
+            {
+                Console.WriteLine(msg.Content[0].Text);
+            }
+
             return Results.Ok(new { response = completion.Content[0].Text });
         }
     }

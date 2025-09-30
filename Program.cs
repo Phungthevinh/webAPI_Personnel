@@ -21,17 +21,7 @@ var key = builder.Configuration["Jwt:Key"];
 var issuer = builder.Configuration["Jwt:Issuer"];
 var audience = builder.Configuration["Jwt:Audience"];
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-                      builder =>
-                      {
-                          builder.WithOrigins("https://chatdt.netlify.app",
-                                              "http://www.contoso.com")
-                          .AllowAnyHeader()
-                          .AllowAnyMethod();
-                      });
-});
+
 
 // Đăng ký NpgsqlDataSource vào DI container
 await using var dataSource = NpgsqlDataSource.Create(connectionString);
@@ -64,7 +54,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
-app.UseCors(MyAllowSpecificOrigins);
+
 
 app.UseAuthentication();
 app.UseAuthorization();

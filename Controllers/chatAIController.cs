@@ -41,7 +41,7 @@ namespace WebAPI.Controllers
         public async Task<IResult> chatvoiAIGPT([FromBody] chatAI message)
         {
             var ai_promt = await _dbContext.ai_prompts
-                .Where(ai => ai.created_by_user_id == 30)
+                .Where(ai => ai.created_by_user_id == 29)
                 .FirstOrDefaultAsync();
             string systemPrompt = @"
             Bạn là một trợ lý ảo tên là Nguyễn Thị Anh Thư, bạn chỉ được phép trả lời dựa trên 'BỘ QUY TRÌNH' được cung cấp dưới đây.

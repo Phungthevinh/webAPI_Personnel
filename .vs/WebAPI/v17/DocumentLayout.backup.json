@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -43,19 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-01T08:47:38.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": ".env",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\.env",
               "RelativeDocumentMoniker": ".env",
               "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\.env",
               "RelativeToolTip": ".env",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2025-10-01T08:46:25.118Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "chatAIController.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\chatAIController.cs",
               "RelativeDocumentMoniker": "Controllers\\chatAIController.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "chatAIRouter.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\chatAIRouter.cs",
               "RelativeDocumentMoniker": "routers\\chatAIRouter.cs",
@@ -81,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "chatAI.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\models\\chatAI.cs",
               "RelativeDocumentMoniker": "models\\chatAI.cs",
@@ -94,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Users.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\models\\Users.cs",
               "RelativeDocumentMoniker": "models\\Users.cs",
@@ -107,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "dbContext.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
               "RelativeDocumentMoniker": "Services\\dbContext.cs",
@@ -120,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UsersRouter.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
               "RelativeDocumentMoniker": "routers\\UsersRouter.cs",

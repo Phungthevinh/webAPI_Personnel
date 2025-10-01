@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_0",
+    "Method": "\u003C.ctor\u003Eb__0_1",
     "RelativePath": "chatAI",
     "HttpMethod": "POST",
     "IsController": false,
@@ -22,8 +22,8 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C.ctor\u003Eb__0",
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
     "RelativePath": "dangky",
     "HttpMethod": "POST",
     "IsController": false,
@@ -37,10 +37,8 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
@@ -118,24 +116,6 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_3",
-    "RelativePath": "test",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C.ctor\u003Eb__0",
     "RelativePath": "them-moi-ma-giam-gia",
@@ -160,32 +140,30 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.KOL_ProfilesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C.ctor\u003Eb__0",
-    "RelativePath": "them-thong-tin-KOL",
-    "HttpMethod": "PATCH",
+    "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
+    "RelativePath": "them-promts",
+    "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "KOL",
-        "Type": "WebAPI.models.KOL_Profiles",
+        "Name": "promts",
+        "Type": "WebAPI.models.ai_prompts",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C.ctor\u003Eb__2",
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
     "RelativePath": "thong-tin-sau-khi-dang-nhap",
     "HttpMethod": "GET",
     "IsController": false,

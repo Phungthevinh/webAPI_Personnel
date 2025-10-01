@@ -1,47 +1,20 @@
 ﻿
 
+using Microsoft.Extensions.Hosting;
 using System.Reflection.Metadata.Ecma335;
 
 namespace WebAPI.models
 {
     public class Users
     {
-        private int id;
-        private string username;
-        private string email;
-        private string password_hash;
-        private string full_name;
-        private bool is_active;
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
-        public string Username
-        {
-            get { return username; }
-            set { username = value; }
-        }
-        public string Email
-        {
-            get { return email; }
-            set { email = value; }
-        }
-        public string PasswordHash
-        {
-            get { return password_hash; }
-            set { password_hash = value; }
-        }
-        public string FullName
-        {
-            get { return full_name; }
-            set { full_name = value; }
-        }
-        public bool IsActive
-        {
-            get { return is_active; }
-            set { is_active = value; }
-        }
+        public long id { get; set; }
+        public string username { get; set; }
+        public string? email { get; set; }
+        public string password_hash { get; set; }
+        public string full_name { get; set; }
+        public bool? is_active { get; set; } = false;
+        public List<ai_prompts> prompts { get; set; } = new();
+        public List<KOL_Profiles> KOL_Profile { get; set; } = new();
 
     }
     //đăng nhập

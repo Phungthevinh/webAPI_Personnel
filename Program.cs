@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using OpenAI.Chat;
 using System.Text;
 using WebAPI.routers;
+using WebAPI.Services;
 
 DotNetEnv.Env.Load();
 
 Console.InputEncoding = Encoding.UTF8;
 Console.OutputEncoding = Encoding.UTF8;
-
-const string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,9 +22,11 @@ var issuer = builder.Configuration["Jwt:Issuer"];
 var audience = builder.Configuration["Jwt:Audience"];
 
 
-
 // Đăng ký NpgsqlDataSource vào DI container
 await using var dataSource = NpgsqlDataSource.Create(connectionString);
+
+builder.Services.AddDbContext<dbContext>(options =>
+    options.UseNpgsql(connectionString));
 
 //khởi tạo model GPT
 builder.Services.AddSingleton<ChatClient>(serviceProvider =>

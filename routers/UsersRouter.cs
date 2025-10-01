@@ -4,36 +4,37 @@ using Npgsql;
 using System.Security.Claims;
 using WebAPI.Controllers;
 using WebAPI.models;
+using WebAPI.Services;
 
 namespace WebAPI.routers
 {
     public class UsersRouter
     {
-        public UsersRouter(WebApplication app, NpgsqlDataSource db, string keyJWT, string Issuer, string Audience)
+        public UsersRouter(WebApplication app, string keyJWT, string Issuer, string Audience)
         {
             //đăng ký tài khoản cho KOL
-            app.MapPost("/dangky", (Users user) =>
+            app.MapPost("/dangky", (Users user, dbContext dbContext) =>
             {
-                UsersControlers u = new UsersControlers();
-                u.addUsers(user, db);
-                return "Đăng ký thành công";
+                UsersControlers u = new UsersControlers(dbContext);
+                return u.addUsers(user);
+                
             });
 
             //đăng nhập cho người dùng
-            app.MapPost("/dangNhap", (DangNhap dangnhap) =>
+            app.MapPost("/dangNhap", (DangNhap dangnhap, dbContext dbContext) =>
             {
-                UsersControlers tokenHandler = new UsersControlers();
-                return tokenHandler.dangnhap(dangnhap, keyJWT, db, Issuer, Audience);
+                UsersControlers tokenHandler = new UsersControlers(dbContext);
+                return tokenHandler.dangnhap(dangnhap, keyJWT, Issuer, Audience);
             });
 
             //lấy ra thông tin sau khi đăng nhập
-            app.MapGet("/thong-tin-sau-khi-dang-nhap", [Authorize] (ClaimsPrincipal user) =>
+            app.MapGet("/thong-tin-sau-khi-dang-nhap", [Authorize] (ClaimsPrincipal user, dbContext dbContext) =>
             {
-                UsersControlers tokenHandler = new UsersControlers();
-                return tokenHandler.laythongtinnguoidung(user, db);
+                UsersControlers tokenHandler = new UsersControlers(dbContext);
+                return tokenHandler.laythongtinnguoidung(user);
             });
 
-            app.MapGet("/test", () => "xin chao");
+            //app.MapGet("/test", () => "xin chao");
         }
     }
 }

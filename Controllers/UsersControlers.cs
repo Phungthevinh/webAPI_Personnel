@@ -1,10 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using DocumentFormat.OpenXml.Office2010.Excel;
+using DocumentFormat.OpenXml.Spreadsheet;
+using DocumentFormat.OpenXml.Wordprocessing;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using WebAPI.models;
+using WebAPI.Services;
 using BCr = BCrypt.Net;
 
 
@@ -12,70 +17,60 @@ namespace WebAPI.Controllers
 {
     public class UsersControlers
     {
+        private readonly dbContext _dbContext; 
+        public UsersControlers(dbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
         //đăng ký người dùng
-        public async Task addUsers(Users user, NpgsqlDataSource db)
+        public async Task<IResult> addUsers(models.Users user)
         {
             try
             {
-                string passwordHash = BCr.BCrypt.HashPassword(user.PasswordHash);
-                user.PasswordHash = passwordHash;
-                await using var connection = await db.OpenConnectionAsync();
-                await using var cmd = new NpgsqlCommand("INSERT INTO users (username, email, password_hash, full_name) VALUES ($1, $2, $3, $4) RETURNING id", connection)
-                {
-                    Parameters =
-                {
-                    new() {Value = user.Username},
-                    new() {Value = user.Email},
-                    new() {Value = user.PasswordHash},
-                    new() {Value = user.FullName}
-                }
+                string passwordHash = BCr.BCrypt.HashPassword(user.password_hash);
 
-                };
 
-                var result = await cmd.ExecuteScalarAsync();
-                await using var cmd1 = new NpgsqlCommand("INSERT INTO KOL_Profiles (user_id) VALUES ($1)", connection)
+                _dbContext.Add(new models.Users
                 {
-                    Parameters =
-                {
-                    new() {Value = result}
-                }
-                };
-                await cmd1.ExecuteNonQueryAsync();
+                    username = user.username,
+                    password_hash = passwordHash,
+                    full_name = user.full_name,
+                    email = user.email,
+                    KOL_Profile = new List<KOL_Profiles>
+                    {
+                        new KOL_Profiles {},
+                    }
+                });
+                await _dbContext.SaveChangesAsync();
+                return Results.Ok(200);
 
             }
             catch (NpgsqlException ex)
             {
                 // Lỗi từ cơ sở dữ liệu PostgreSQL
                 Console.WriteLine($"Lỗi PostgreSQL: {ex.Message}");
-                
+                return Results.Ok(500);
+
             }
-            
+
         }
 
         //đăng nhập người dùng
-        public async Task<string> dangnhap(DangNhap dangnhap, string keyJWT, NpgsqlDataSource db, string Issuer, string Audience)
+        public async Task<string> dangnhap(DangNhap dangnhap, string keyJWT, string Issuer, string Audience)
         {
-            //kết nối csdl
-            await using var connection = await db.OpenConnectionAsync();
-            //truy vấn csdl
-            await using var command = new NpgsqlCommand("select * from users where username = ($1)", connection)
-            {
-                Parameters =
-                {
-                    new() {Value = dangnhap.Username},
-                }
-            };
+
+            
+            var user = await _dbContext.users
+                .Where(u => u.username == dangnhap.Username)
+                .FirstOrDefaultAsync();
+ 
             //đọc ra kết quả
-            await using var reader = await command.ExecuteReaderAsync();
-            if (!await reader.ReadAsync()) {
+            if (user == null)
+            {
                 return "userName không chính xác";
             }
 
-            var name = reader["username"].ToString();   
-            var email = reader["email"].ToString();
-            var passWord = reader["password_hash"].ToString();
-
-            if (dangnhap.Password_hash == null || !BCr.BCrypt.Verify(dangnhap.Password_hash, passWord))
+            if (dangnhap.Password_hash == null || !BCr.BCrypt.Verify(dangnhap.Password_hash, user.password_hash))
             {
                 return "Mật khẩu không chính xác";
             }
@@ -84,8 +79,8 @@ namespace WebAPI.Controllers
             var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var claims = new[]
             {
-                new Claim(ClaimTypes.Name, name),
-                new Claim(ClaimTypes.Email, email),
+                new Claim(ClaimTypes.Name, user.username),
+                new Claim(ClaimTypes.Email, user.email),
             };
             var tokenDescriptor = new SecurityTokenDescriptor
             {
@@ -101,39 +96,23 @@ namespace WebAPI.Controllers
             return tokenString;
         }
 
-        public async Task<IResult> laythongtinnguoidung(ClaimsPrincipal user, NpgsqlDataSource db)
+        public async Task<IResult> laythongtinnguoidung(ClaimsPrincipal user)
         {
             if (!user.Identity.IsAuthenticated)
             {
                 return Results.Unauthorized();
             }
             var userName = user.Identity.Name;
-            await using var connection = await db.OpenConnectionAsync();
-            await using var command = new NpgsqlCommand("SELECT id, username, email, full_name from Users where username = $1", connection) 
-            {
-                Parameters =
-                {
-                    new() { Value = userName },
-                    
-                }
-            };
-            await using var result = await command.ExecuteReaderAsync();
-            if (!await result.ReadAsync())
-            {
-                
-                return Results.Unauthorized();
-            }
-            var id = result.GetInt32(0);
-            var username = result.GetString(1);
-            var email = result.GetString(2);
-            var name = result.GetString(3);
-
+            
+            var u = await _dbContext.users
+                .Where(us => us.username == userName)
+                .FirstOrDefaultAsync();
             return Results.Ok(new
             {
-                _id = id,
-                _username = username,
-                _email = email,
-                _name = name
+                _id = u.id,
+                _username = u.username,
+                _email = u.email,
+                _name = u.full_name
             });
         }
     }

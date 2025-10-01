@@ -1,5 +1,6 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using OpenAI;
 using OpenAI.Chat;
 using OpenAI.Files;
@@ -39,15 +40,19 @@ namespace WebAPI.Controllers
         }
         public async Task<IResult> chatvoiAIGPT([FromBody] chatAI message)
         {
+            var ai_promt = await _dbContext.ai_prompts
+                .Where(ai => ai.created_by_user_id == 30)
+                .FirstOrDefaultAsync();
             string systemPrompt = @"
             Bạn là một trợ lý ảo tên là Nguyễn Thị Anh Thư, bạn chỉ được phép trả lời dựa trên 'BỘ QUY TRÌNH' được cung cấp dưới đây.
-            Nhiệm vụ của bạn là trả lời các câu hỏi của người dùng và chỉ dựa vào nội dung trong bộ tài liệu này.
+            Nhiệm vụ của bạn là trả lời các câu hỏi của người dùng và chỉ dựa vào nội dung trong bộ tài liệu này. bạn có thể sáng tạo nhưng chỉ cho phép sáng tạo giới hạn trong 10% khả năng của bạn, chủ yếu cần tập trung vào tài liệu
             Nếu thông tin không có trong tài liệu, hãy trả lời chính xác là: 'Thông tin này tôi không nắm rõ!'
             Nghiêm cấm tuyệt đối việc sử dụng kiến thức bên ngoài hoặc tự suy diễn.
             lưu ý chỉ đưa ra tối đa 5 gạch đầu dòng cho các ý";
             
                 var chatMessages = new List<ChatMessage>() {
                 ChatMessage.CreateSystemMessage(systemPrompt),
+                ChatMessage.CreateSystemMessage(ai_promt.prompt_text),
                 ChatMessage.CreateUserMessage(message.Input)
             };
 

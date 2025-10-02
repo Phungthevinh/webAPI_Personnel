@@ -26,7 +26,7 @@ namespace WebAPI.Controllers
             try
             {
                 string passwordHash = BCr.BCrypt.HashPassword(users.password_hash);
-
+                DateTime now = DateTime.UtcNow;
 
                 _dbContext.Add(new Users
                 {
@@ -34,6 +34,7 @@ namespace WebAPI.Controllers
                     password_hash = passwordHash,
                     full_name = users.full_name,
                     email = users.email,
+                    created_at = now,
                     KOL_Profile = new List<KOL_Profiles>
                     {
                         new KOL_Profiles {},

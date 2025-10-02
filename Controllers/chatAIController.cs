@@ -31,12 +31,14 @@ namespace WebAPI.Controllers
         //lưu promts vào database theo các chức năng khác nhau của promts và theo ngời dùng lưu vào
         public async Task<IResult> themPromts(ai_prompts promts)
         {
+            DateTime now = DateTime.UtcNow;
             _dbContext.Add(new ai_prompts
             {
                 created_by_user_id = promts.created_by_user_id,
                 prompt_name = promts.prompt_name,
                 category = promts.category,
                 prompt_text = promts.prompt_text,
+                created_at = now,
 
             });
             await _dbContext.SaveChangesAsync();

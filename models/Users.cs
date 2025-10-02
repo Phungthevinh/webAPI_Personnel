@@ -17,6 +17,7 @@ namespace WebAPI.models
         public string password_hash { get; set; }
         public string full_name { get; set; }
         public bool? is_active { get; set; } = false;
+        public DateTime? created_at { get; set; }
         public List<ai_prompts> prompts { get; set; } = new();
         public List<KOL_Profiles> KOL_Profile { get; set; } = new();
 

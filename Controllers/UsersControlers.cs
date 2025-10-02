@@ -1,6 +1,4 @@
-﻿using DocumentFormat.OpenXml.Office2010.Excel;
-using DocumentFormat.OpenXml.Spreadsheet;
-using DocumentFormat.OpenXml.Wordprocessing;
+﻿
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -23,19 +21,19 @@ namespace WebAPI.Controllers
             _dbContext = dbContext;
         }
         //đăng ký người dùng
-        public async Task<IResult> addUsers(models.Users user)
+        public async Task<IResult> addUsers(Users users)
         {
             try
             {
-                string passwordHash = BCr.BCrypt.HashPassword(user.password_hash);
+                string passwordHash = BCr.BCrypt.HashPassword(users.password_hash);
 
 
                 _dbContext.Add(new models.Users
                 {
-                    username = user.username,
+                    username = users.username,
                     password_hash = passwordHash,
-                    full_name = user.full_name,
-                    email = user.email,
+                    full_name = users.full_name,
+                    email = users.email,
                     KOL_Profile = new List<KOL_Profiles>
                     {
                         new KOL_Profiles {},

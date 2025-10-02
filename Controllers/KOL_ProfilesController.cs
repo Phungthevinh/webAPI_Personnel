@@ -1,26 +1,35 @@
-﻿//using Npgsql;
-//using WebAPI.models;
+﻿using Microsoft.EntityFrameworkCore;
+using Npgsql;
+using WebAPI.models;
+using WebAPI.Services;
 
-//namespace WebAPI.Controllers
-//{
-//    public class KOL_ProfilesController
-//    {
-//        public async Task<string> ThemmoiprofileKOL(NpgsqlDataSource db, KOL_Profiles KOL)
-//        {
-//            await using var connection = await db.OpenConnectionAsync();
-//            Console.WriteLine(KOL.Phone);
-//            await using var cmd = new NpgsqlCommand("UPDATE KOL_Profiles Set phone = @p1 WHERE user_id = @p2", connection)
-//            {
-//                Parameters =
-//                        {
-//                            new("p1", KOL.Phone),
-//                            new("p2", KOL.User_id)
-//                        }
-//            };
-
-//            await cmd.ExecuteNonQueryAsync();
-
-//            return "Thêm thành công";
-//        }
-//    }
-//}
+namespace WebAPI.Controllers
+{
+    public class KOL_ProfilesController
+    {
+        private readonly dbContext _dbContext;
+        public KOL_ProfilesController(dbContext db)
+        {
+            _dbContext = db;
+        }
+        public async Task<IResult> ThemmoiprofileKOL( KOL_Profiles KOL)
+        {
+            try
+            {
+                var kOL_Profiles = await _dbContext.kol_profiles
+                    .Where(k => k.user_id == KOL.user_id)
+                    .FirstOrDefaultAsync();
+                kOL_Profiles.phone = KOL.phone;
+                kOL_Profiles.niche = KOL.niche;
+                kOL_Profiles.bio = KOL.bio;
+                kOL_Profiles.social_media_links = KOL.social_media_links;
+                await _dbContext.SaveChangesAsync();
+                return Results.Ok(new {KOL.user_id});
+            }
+            catch (Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
+    }
+}

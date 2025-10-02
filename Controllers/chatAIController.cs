@@ -65,11 +65,11 @@ namespace WebAPI.Controllers
         }
 
         //xóa promts đã tạo
-        public async Task<IResult> xoaPromts( ai_prompts prompts)
+        public async Task<IResult> xoaPromts( long id)
         {
             try
             {
-                var promts = _dbContext.ai_prompts.Find(prompts.id);
+                var promts = _dbContext.ai_prompts.Find(id);
                 if (promts != null)
                 {
                     _dbContext.ai_prompts.Remove(promts);

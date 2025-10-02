@@ -229,6 +229,28 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.KOL_ProfilesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
+    "RelativePath": "them-thong-tin-KOL",
+    "HttpMethod": "PATCH",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "KOL",
+        "Type": "WebAPI.models.KOL_Profiles",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_2",
     "RelativePath": "thong-tin-sau-khi-dang-nhap",

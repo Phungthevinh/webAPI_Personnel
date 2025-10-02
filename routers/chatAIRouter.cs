@@ -34,10 +34,10 @@ namespace WebAPI.routers
             });
 
             //xóa promts
-            app.MapDelete("/xoa-promts", ( [FromBody] ai_prompts prompts, dbContext db) =>
+            app.MapDelete("/xoa-promts", ( long id, dbContext db) =>
             {
                 chatAIController xoapromts = new chatAIController(db);
-                return xoapromts.xoaPromts(prompts);
+                return xoapromts.xoaPromts(id);
             });
 
             //hỏi câu trả lời với chat

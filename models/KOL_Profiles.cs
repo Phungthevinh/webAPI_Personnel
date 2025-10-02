@@ -10,12 +10,12 @@ namespace WebAPI.models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long id { get; set; }
         public long user_id { get; set; }
-        private string bio;
-        private string social_media_link;
-        private string niche;
-        private int follower_count;
-        private decimal ratting;
-        public string phone { get; set; }
+        public string? bio { get; set; }
+        public string? social_media_links { get; set; }
+        public string? niche { get; set; }
+        public int? follower_count { get; set; }
+        public decimal? ratting { get; set; }
+        public string? phone { get; set; }
 
         [ForeignKey("user_id")]
         public Users users { get; set; }

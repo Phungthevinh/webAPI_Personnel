@@ -5,6 +5,7 @@ namespace WebAPI.models
     [Table("ai_prompts")]
     public class ai_prompts
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long id { get; set; }
         public string? prompt_name { get; set; }
         public string? prompt_text { get; set; }

@@ -7,6 +7,7 @@ namespace WebAPI.models
     public class KOL_Profiles
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long id { get; set; }
         public long user_id { get; set; }
         private string bio;

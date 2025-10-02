@@ -5,6 +5,6 @@
     "\\models",
     "\\routers"
   ],
-  "SelectedNode": "\\models\\Users.cs",
+  "SelectedNode": "\\routers\\UsersRouter.cs",
   "PreviewInSolutionExplorer": false
 }

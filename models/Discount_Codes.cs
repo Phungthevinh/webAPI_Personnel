@@ -1,4 +1,6 @@
-﻿namespace WebAPI.models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace WebAPI.models
 {
 
     interface set_discount_codes
@@ -8,6 +10,7 @@
     }
     public class Discount_Codes : set_discount_codes
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         private int id;
         private string code;
         private int kol_id;

@@ -15,6 +15,7 @@ Console.OutputEncoding = Encoding.UTF8;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 // Lấy config từ appsettings.json hoặc env
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 var key = builder.Configuration["Jwt:Key"];

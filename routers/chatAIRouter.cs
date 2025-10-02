@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 using OpenAI.Chat;
 using WebAPI.Controllers;
@@ -16,6 +17,27 @@ namespace WebAPI.routers
             {
                 chatAIController themmoi = new chatAIController(db);
                 return themmoi.themPromts(promts);
+            });
+
+            //lấy ra tất cả các promts
+            app.MapGet("/promts", (dbContext db, int page, int limit) =>
+            {
+                chatAIController layRaTatCaPromts = new chatAIController(db);
+                return layRaTatCaPromts.tatcapromts(page, limit);
+            });
+
+            //chỉnh sửa promts
+            app.MapPatch("/chinh-sua-promts", (dbContext db, chinh_sua_promts promts) =>
+            {
+                chatAIController chinh_sua_promts = new chatAIController(db);
+                return chinh_sua_promts.capNhapPromt(promts);
+            });
+
+            //xóa promts
+            app.MapDelete("/xoa-promts", ( [FromBody] ai_prompts prompts, dbContext db) =>
+            {
+                chatAIController xoapromts = new chatAIController(db);
+                return xoapromts.xoaPromts(prompts);
             });
 
             //hỏi câu trả lời với chat

@@ -34,7 +34,7 @@ namespace WebAPI.routers
                 return tokenHandler.laythongtinnguoidung(user);
             });
 
-            //app.MapGet("/test", () => "xin chao");
+            app.MapGet("/test", () => "xin chao");
         }
     }
 }

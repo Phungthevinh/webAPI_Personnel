@@ -1,10 +1,14 @@
 ﻿
+using DocumentFormat.OpenXml.InkML;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using OpenAI;
 using OpenAI.Chat;
 using OpenAI.Files;
 using System.ClientModel;
+using System.Reflection.Metadata;
+using System.Text.Json;
 using WebAPI.models;
 using WebAPI.Services;
 
@@ -24,6 +28,7 @@ namespace WebAPI.Controllers
         {
             _dbContext = dbContext;
         }
+
         //lưu promts vào database theo các chức năng khác nhau của promts và theo ngời dùng lưu vào
         public async Task<IResult> themPromts(ai_prompts promts)
         {
@@ -38,13 +43,80 @@ namespace WebAPI.Controllers
             await _dbContext.SaveChangesAsync();
             return Results.Ok(200);
         }
+
+        //lấy ra tất cả các promt đã tạo
+        public async Task<IResult> tatcapromts(int page, int limit)
+        {
+            try
+            {
+                var promt = await _dbContext.ai_prompts
+                .OrderBy(AI => AI.id)
+                .Skip((page - 1) * limit)
+                .Take(limit)
+                .ToListAsync();
+                var promtAI = JsonSerializer.Serialize(promt);
+                int totalPromts = await _dbContext.ai_prompts.CountAsync();
+
+                return Results.Ok(new { promtAI, totalPromts });
+            }
+            catch(Exception e)
+            {
+                return Results.BadRequest(new { error = e.Message });
+            }
+        }
+
+        //xóa promts đã tạo
+        public async Task<IResult> xoaPromts( ai_prompts prompts)
+        {
+            try
+            {
+                var promts = _dbContext.ai_prompts.Find(prompts.id);
+                if (promts != null)
+                {
+                    _dbContext.ai_prompts.Remove(promts);
+                    _dbContext.SaveChanges();
+                }
+
+                return Results.Ok(200);
+            }catch(Exception e)
+            {
+                return Results.BadRequest(new { e.Message });
+            }
+        }
+
+        //chỉnh sửa promts
+        public async Task<IResult> capNhapPromt (chinh_sua_promts prompts)
+        {
+            try
+            {
+
+                var updatePromts = await _dbContext.ai_prompts
+                    .Where(ai => ai.id == prompts.id)
+                    .FirstOrDefaultAsync();
+                if(updatePromts != null)
+                {
+                    updatePromts.prompt_text = prompts.prompt_text;
+                    updatePromts.prompt_name = prompts.prompt_name;
+                    updatePromts.category = prompts.category;
+                    await _dbContext.SaveChangesAsync();
+                    return Results.Ok();
+                }
+
+                return Results.NotFound(new {err = "id truyền không hợp lệ"});
+
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(new { error = ex.Message });
+            }
+        }
+        //chatAI với AI
         public async Task<IResult> chatvoiAIGPT([FromBody] chatAI message)
         {
             var ai_promt = await _dbContext.ai_prompts
                 .Where(ai => ai.created_by_user_id == 29)
                 .FirstOrDefaultAsync();
             string systemPrompt = @"
-            Bạn là một trợ lý ảo tên là Nguyễn Thị Anh Thư, bạn chỉ được phép trả lời dựa trên 'BỘ QUY TRÌNH' được cung cấp dưới đây.
+            Bạn là một trợ lý ảo tên là Vinh râu, bạn chỉ được phép trả lời dựa trên 'BỘ QUY TRÌNH' được cung cấp dưới đây.
             Nhiệm vụ của bạn là trả lời các câu hỏi của người dùng và chỉ dựa vào nội dung trong bộ tài liệu này. bạn có thể sáng tạo nhưng chỉ cho phép sáng tạo giới hạn trong 10% khả năng của bạn, chủ yếu cần tập trung vào tài liệu
             Nếu thông tin không có trong tài liệu, hãy trả lời chính xác là: 'Thông tin này tôi không nắm rõ!'
             Nghiêm cấm tuyệt đối việc sử dụng kiến thức bên ngoài hoặc tự suy diễn.
@@ -60,10 +132,7 @@ namespace WebAPI.Controllers
             {
                 Temperature = 0
             });
-            foreach (var msg in chatMessages)
-            {
-                Console.WriteLine(msg.Content[0].Text);
-            }
+            
 
             return Results.Ok(new { response = completion.Content[0].Text });
         }

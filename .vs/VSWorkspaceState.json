@@ -4,6 +4,6 @@
     "\\Controllers",
     "\\routers"
   ],
-  "SelectedNode": "\\WebAPI.sln",
+  "SelectedNode": "\\Controllers\\chatAIController.cs",
   "PreviewInSolutionExplorer": false
 }

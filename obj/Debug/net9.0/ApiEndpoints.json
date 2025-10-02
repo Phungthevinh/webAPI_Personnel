@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_1",
+    "Method": "\u003C.ctor\u003Eb__0_4",
     "RelativePath": "chatAI",
     "HttpMethod": "POST",
     "IsController": false,
@@ -10,6 +10,28 @@
       {
         "Name": "chatai",
         "Type": "WebAPI.models.chatAI",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
+    "RelativePath": "chinh-sua-promts",
+    "HttpMethod": "PATCH",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "promts",
+        "Type": "WebAPI.models.chinh_sua_promts",
         "IsRequired": true
       }
     ],
@@ -116,6 +138,51 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_1",
+    "RelativePath": "promts",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_3",
+    "RelativePath": "test",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
     "Method": "\u003C.ctor\u003Eb__0",
     "RelativePath": "them-moi-ma-giam-gia",
@@ -169,6 +236,28 @@
     "IsController": false,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_3",
+    "RelativePath": "xoa-promts",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "prompts",
+        "Type": "WebAPI.models.ai_prompts",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": [
       {
         "Type": "System.Void",

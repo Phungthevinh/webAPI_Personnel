@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
+    "\\models",
     "\\routers"
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\models\\ai_prompts.cs",
   "PreviewInSolutionExplorer": false
 }

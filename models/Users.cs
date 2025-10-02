@@ -1,6 +1,7 @@
 ﻿
 
 using Microsoft.Extensions.Hosting;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Reflection.Metadata.Ecma335;
 
@@ -8,6 +9,7 @@ namespace WebAPI.models
 {
     public class Users
     {
+        [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public long id { get; set; }
         public string username { get; set; }

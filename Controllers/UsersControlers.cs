@@ -28,7 +28,7 @@ namespace WebAPI.Controllers
                 string passwordHash = BCr.BCrypt.HashPassword(users.password_hash);
 
 
-                _dbContext.Add(new models.Users
+                _dbContext.Add(new Users
                 {
                     username = users.username,
                     password_hash = passwordHash,

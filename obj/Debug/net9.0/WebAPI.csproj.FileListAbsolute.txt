@@ -116,8 +116,5 @@ D:\webBEc#\webAPI_Personnel\obj\Debug\net9.0\ref\WebAPI.dll
 D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\OpenAI.dll
 D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\System.ClientModel.dll
 D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\System.Memory.Data.dll
-D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\DocumentFormat.OpenXml.dll
-D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\DocumentFormat.OpenXml.Framework.dll
 D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\DotNetEnv.dll
 D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\Sprache.dll
-D:\webBEc#\webAPI_Personnel\bin\Debug\net9.0\System.IO.Packaging.dll

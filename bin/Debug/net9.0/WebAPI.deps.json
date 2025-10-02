@@ -9,7 +9,6 @@
       "WebAPI/1.0.0": {
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
-          "DocumentFormat.OpenXml": "3.3.0",
           "DotNetEnv": "3.1.1",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "9.0.9",
           "Microsoft.AspNetCore.OpenApi": "9.0.9",
@@ -28,28 +27,6 @@
           "lib/net6.0/BCrypt.Net-Next.dll": {
             "assemblyVersion": "4.0.3.0",
             "fileVersion": "4.0.3.0"
-          }
-        }
-      },
-      "DocumentFormat.OpenXml/3.3.0": {
-        "dependencies": {
-          "DocumentFormat.OpenXml.Framework": "3.3.0"
-        },
-        "runtime": {
-          "lib/net8.0/DocumentFormat.OpenXml.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.0.0"
-          }
-        }
-      },
-      "DocumentFormat.OpenXml.Framework/3.3.0": {
-        "dependencies": {
-          "System.IO.Packaging": "8.0.1"
-        },
-        "runtime": {
-          "lib/net8.0/DocumentFormat.OpenXml.Framework.dll": {
-            "assemblyVersion": "3.3.0.0",
-            "fileVersion": "3.3.0.0"
           }
         }
       },
@@ -650,14 +627,6 @@
           "System.Runtime": "4.3.1"
         }
       },
-      "System.IO.Packaging/8.0.1": {
-        "runtime": {
-          "lib/net8.0/System.IO.Packaging.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.1024.46610"
-          }
-        }
-      },
       "System.Linq/4.3.0": {
         "dependencies": {
           "System.Collections": "4.3.0",
@@ -1090,20 +1059,6 @@
       "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
       "path": "bcrypt.net-next/4.0.3",
       "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
-    },
-    "DocumentFormat.OpenXml/3.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-JogRPJNiE6kKvbuCqVRX691pPWeGMqdQgjrUwRYkdpfkMmtElfqAgcRR73geYj7OtBeEpstldZXXzJw27LUI9w==",
-      "path": "documentformat.openxml/3.3.0",
-      "hashPath": "documentformat.openxml.3.3.0.nupkg.sha512"
-    },
-    "DocumentFormat.OpenXml.Framework/3.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-R5CLzEoeyr7XDB7g3NTxRobcU19agaxVAhGZm+fZUShJGiU4bw8oUgnA2BNFepigJckfFMayOBMAbV3kDXNInA==",
-      "path": "documentformat.openxml.framework/3.3.0",
-      "hashPath": "documentformat.openxml.framework.3.3.0.nupkg.sha512"
     },
     "DotNetEnv/3.1.1": {
       "type": "package",
@@ -1580,13 +1535,6 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
-    },
-    "System.IO.Packaging/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-KYkIOAvPexQOLDxPO2g0BVoWInnQhPpkFzRqvNrNrMhVT6kqhVr0zEb6KCHlptLFukxnZrjuMVAnxK7pOGUYrw==",
-      "path": "system.io.packaging/8.0.1",
-      "hashPath": "system.io.packaging.8.0.1.nupkg.sha512"
     },
     "System.Linq/4.3.0": {
       "type": "package",

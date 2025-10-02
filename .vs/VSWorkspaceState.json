@@ -5,6 +5,6 @@
     "\\models",
     "\\routers"
   ],
-  "SelectedNode": "\\models\\ai_prompts.cs",
+  "SelectedNode": "\\Controllers\\chatAIController.cs",
   "PreviewInSolutionExplorer": false
 }

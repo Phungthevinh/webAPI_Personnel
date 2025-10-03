@@ -11,7 +11,7 @@ namespace WebAPI.routers
        public RolesRouter(WebApplication app)
         {
             //thêm mới vai trò
-            app.MapPost("them-moi-vai-tro", [Authorize] (Roles roles, dbContext db) =>
+            app.MapPost("/them-moi-vai-tro", [Authorize] (Roles roles, dbContext db) =>
             {
                 RolesController themmoivaitro = new RolesController(db);
                 return themmoivaitro.themMoiRole(roles);
@@ -28,7 +28,7 @@ namespace WebAPI.routers
             //xóa vai trò
 
             //thêm người dùng vào vi trò tương ứng
-            app.MapPost("them-nguoi-dung-vao-vai-tro", (dbContext db, user_roles user_role) =>
+            app.MapPost("/them-nguoi-dung-vao-vai-tro", (dbContext db, user_roles user_role) =>
             {
                 RolesController themnguoidungvaovaitro = new RolesController(db);
                 return themnguoidungvaovaitro.themnguoidungvaovaitro(user_role);

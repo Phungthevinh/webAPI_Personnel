@@ -17,21 +17,21 @@ namespace WebAPI.routers
             });
 
             //xem tất cả quyền hạn
-            app.MapGet("xem-tat-ca-quyen-han", [Authorize] (dbContext dbContext) =>
+            app.MapGet("/xem-tat-ca-quyen-han", [Authorize] (dbContext dbContext) =>
             {
                 PermissionsController xemTatCaQuyenHan = new PermissionsController(dbContext);
                 return xemTatCaQuyenHan.xemquyenhan();
             });
 
             //xóa quyền hạn
-            app.MapDelete("xoa-quyen-han", [Authorize] (dbContext dbContext, int id) =>
+            app.MapDelete("/xoa-quyen-han", [Authorize] (dbContext dbContext, int id) =>
             {
                 PermissionsController xoaquyenhan = new PermissionsController(dbContext);
                 return xoaquyenhan.xoaQuyenHan(id);
             });
 
             //sửa quyền hạn
-            app.MapPatch("sua-quyen-han", [Authorize] (Permissions permissions, dbContext dbContext) =>
+            app.MapPatch("/sua-quyen-han", [Authorize] (Permissions permissions, dbContext dbContext) =>
             {
                 PermissionsController suaquyenhan = new PermissionsController(dbContext);
                 return suaquyenhan.suaquyenhan(permissions);

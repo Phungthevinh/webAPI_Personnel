@@ -4,7 +4,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Npgsql;
 using OpenAI.Chat;
+using System.Reflection.Emit;
 using System.Text;
+using WebAPI.models;
 using WebAPI.routers;
 using WebAPI.Services;
 
@@ -28,6 +30,7 @@ await using var dataSource = NpgsqlDataSource.Create(connectionString);
 
 builder.Services.AddDbContext<dbContext>(options =>
     options.UseNpgsql(connectionString));
+
 
 //khởi tạo model GPT
 builder.Services.AddSingleton<ChatClient>(serviceProvider =>

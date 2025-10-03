@@ -1,5 +1,6 @@
 ﻿using Npgsql;
 using System;
+using WebAPI.models;
 
 
 namespace WebAPI.routers
@@ -11,6 +12,8 @@ namespace WebAPI.routers
             KOL_ProfilesRouter KOI_Profiles = new KOL_ProfilesRouter(app);
             Discount_CodesRouter discount_CodesRouter = new Discount_CodesRouter(app, db);
             chatAIRouter ChatAIRouter = new chatAIRouter(app);
+            RolesRouter rolesRouter = new RolesRouter(app);
+            PermissionsRouter permissionsRouter = new PermissionsRouter(app);
         }
     }
 }

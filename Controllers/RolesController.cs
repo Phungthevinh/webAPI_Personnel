@@ -52,6 +52,23 @@ namespace WebAPI.Controllers
         }
 
         //xóa vai trò
+        public async Task<IResult> xoaVaiTro(int id)
+        {
+            try
+            {
+                var delRole = await _dbContext.roles
+                    .Where(r => r.id == id)
+                    .FirstOrDefaultAsync();
+
+                _dbContext.Remove(delRole);
+                await _dbContext.SaveChangesAsync();
+
+                return Results.Ok("xóa thành công");
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
         //cập nhập vai trò
 
         //them người dung vao vai trò tương ứng

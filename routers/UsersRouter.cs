@@ -35,7 +35,7 @@ namespace WebAPI.routers
             });
 
             //lấy ra tất cả thông tin người dùng kèm chức vụ
-            app.MapGet("/thong-tin-nguoi-dung-kem-chuc-vu", (dbContext dbContext) =>
+            app.MapGet("/thong-tin-nguoi-dung-kem-chuc-vu", [Authorize] (dbContext dbContext) =>
             {
                 UsersControlers nguoiDungVaChucVu = new UsersControlers(dbContext);
                 return nguoiDungVaChucVu.tatCaNguoiDungVaThongTinCuaNguoiDung();

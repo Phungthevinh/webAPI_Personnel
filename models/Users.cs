@@ -20,7 +20,7 @@ namespace WebAPI.models
         public DateTime? created_at { get; set; }
         public List<ai_prompts> prompts { get; set; } = new();
         public List<KOL_Profiles> KOL_Profile { get; set; } = new();
-        public List<user_roles> user_roles { get; set; }
+        public List<user_roles> user_roles { get; set; } = new();
 
     }
     //đăng nhập

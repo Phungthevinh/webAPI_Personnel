@@ -33,6 +33,13 @@ namespace WebAPI.routers
                 RolesController themnguoidungvaovaitro = new RolesController(db);
                 return themnguoidungvaovaitro.themnguoidungvaovaitro(user_role);
             });
+
+            //xóa vai trò người dùng
+            app.MapDelete("/xoa-vai-tro-nguoi-dung", (dbContext db, int user_id) =>
+            {
+                RolesController xoaVaiTroNguoiDung = new RolesController(db);
+                return xoaVaiTroNguoiDung.xoaVaiTroNguoiDung(user_id);
+            });
         }
     }
 }

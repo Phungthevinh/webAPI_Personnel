@@ -95,6 +95,7 @@ namespace WebAPI.Controllers
             return tokenString;
         }
 
+        //thông tin người dùng sau khi đăng nhập
         public async Task<IResult> laythongtinnguoidung(ClaimsPrincipal user)
         {
             if (!user.Identity.IsAuthenticated)
@@ -113,6 +114,29 @@ namespace WebAPI.Controllers
                 _email = u.email,
                 _name = u.full_name
             });
+        }
+
+        // tất cả người dùng và chức vụ của họ
+        public async Task<IResult> tatCaNguoiDungVaThongTinCuaNguoiDung()
+        {
+            try
+            {
+                var nguoidungvaChucvu = await _dbContext.users
+                    .OrderBy(us => us.id)
+                    .Select(user => new
+                    {
+                        idnguoidung = user.id,
+                        tennguoidung = user.full_name,
+                        email = user.email,
+                        hoatdong = user.is_active,
+                        chucvu = user.user_roles.Select(ur => new {chucvu = ur.Roles.name})
+                    })
+                    .FirstOrDefaultAsync();
+                return Results.Ok(nguoidungvaChucvu);
+            }
+            catch (Exception ex) { 
+                return Results.BadRequest(ex.Message);
+            }
         }
     }
 }

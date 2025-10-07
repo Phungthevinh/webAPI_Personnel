@@ -204,7 +204,7 @@
   },
   {
     "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_3",
+    "Method": "\u003C.ctor\u003Eb__0_4",
     "RelativePath": "test",
     "HttpMethod": "GET",
     "IsController": false,
@@ -356,6 +356,22 @@
   },
   {
     "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_3",
+    "RelativePath": "thong-tin-nguoi-dung-kem-chuc-vu",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_2",
     "RelativePath": "thong-tin-sau-khi-dang-nhap",
     "HttpMethod": "GET",
@@ -418,6 +434,28 @@
     "Parameters": [
       {
         "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.RolesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_3",
+    "RelativePath": "xoa-vai-tro-nguoi-dung",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
         "Type": "System.Int32",
         "IsRequired": true
       }

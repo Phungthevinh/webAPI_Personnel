@@ -71,12 +71,24 @@ namespace WebAPI.Controllers
         }
 
         //chỉnh sửa vai trò người dùng
+        public async Task<IResult> xoaVaiTroNguoiDung(int user_id)
+        {
+            try
+            {
+                var user_rol = await _dbContext.user_roles
+                    .Where(u => u.user_id == user_id)
+                    .FirstOrDefaultAsync();
+
+                _dbContext.Remove(user_rol);
+
+                await _dbContext.SaveChangesAsync();
+                return Results.Ok(200);
+
+            }
+            catch (Exception ex) { return Results.BadRequest(ex.Message); }
+        }
         //xóa vai trò người dùng
     }
 
-    internal class User_roles
-    {
-        public long user_id { get; set; }
-        public long role_id { get; set; }
-    }
+    
 }

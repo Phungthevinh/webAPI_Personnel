@@ -131,7 +131,7 @@ namespace WebAPI.Controllers
                         hoatdong = user.is_active,
                         chucvu = user.user_roles.Select(ur => new {chucvu = ur.Roles.name})
                     })
-                    .FirstOrDefaultAsync();
+                    .ToListAsync();
                 return Results.Ok(nguoidungvaChucvu);
             }
             catch (Exception ex) { 

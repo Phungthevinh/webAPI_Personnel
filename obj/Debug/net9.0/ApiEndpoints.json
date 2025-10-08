@@ -90,54 +90,6 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C.ctor\u003Eb__2",
-    "RelativePath": "khoa-ma-giam-gia",
-    "HttpMethod": "PATCH",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "discount_codes",
-        "Type": "WebAPI.models.Discount_Codes",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C.ctor\u003Eb__1",
-    "RelativePath": "kich-hoat-ma-giam-gia",
-    "HttpMethod": "PATCH",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "discount_codes",
-        "Type": "WebAPI.models.Discount_Codes",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_1",
     "RelativePath": "promts",
@@ -221,8 +173,8 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C.ctor\u003Eb__0",
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
     "RelativePath": "them-moi-ma-giam-gia",
     "HttpMethod": "POST",
     "IsController": false,
@@ -230,16 +182,14 @@
     "Parameters": [
       {
         "Name": "discount_codes",
-        "Type": "WebAPI.models.Discount_Codes",
+        "Type": "WebAPI.models.discount_codes",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

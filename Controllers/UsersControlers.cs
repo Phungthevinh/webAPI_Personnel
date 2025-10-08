@@ -20,6 +20,7 @@ namespace WebAPI.Controllers
         {
             _dbContext = dbContext;
         }
+
         //đăng ký người dùng
         public async Task<IResult> addUsers(Users users)
         {

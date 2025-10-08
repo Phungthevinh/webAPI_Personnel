@@ -87,7 +87,7 @@ namespace WebAPI.Controllers
             catch (Exception ex) { return Results.BadRequest(ex.InnerException?.Message ?? ex.Message); }
         }
 
-        //chỉnh sửa vai trò người dùng
+        //xóa vai trò người dùng
         public async Task<IResult> xoaVaiTroNguoiDung(int user_id)
         {
             try
@@ -104,7 +104,7 @@ namespace WebAPI.Controllers
             }
             catch (Exception ex) { return Results.BadRequest(ex.Message); }
         }
-        //xóa vai trò người dùng
+       
     }
 
     

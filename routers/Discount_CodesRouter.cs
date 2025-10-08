@@ -17,10 +17,10 @@ namespace WebAPI.routers
             });
 
             //kích hoạt mã giảm giá
-            //app.MapPatch("/kich-hoat-ma-giam-gia", [Authorize] (Discount_Codes discount_codes) =>
+            //app.MapPatch("/kich-hoat-ma-giam-gia", [Authorize] (discount_codes discount_codes, dbContext dbContext) =>
             //{
-            //    Discount_CodesController discount_CodesController = new Discount_CodesController();
-            //    return discount_CodesController.kichhoatmagiamgia(discount_codes, db);
+            //    Discount_CodesController discount_CodesController = new Discount_CodesController(dbContext);
+            //    return discount_CodesController.kichhoatmagiamgia(discount_codes);
             //});
 
             //khóa mã giảm giá

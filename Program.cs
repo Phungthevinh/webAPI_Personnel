@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
@@ -30,6 +31,12 @@ await using var dataSource = NpgsqlDataSource.Create(connectionString);
 
 builder.Services.AddDbContext<dbContext>(options =>
     options.UseNpgsql(connectionString));
+
+//đăng ký ủy quyền vai trò vào danh tính
+// Toàn bộ chuỗi lệnh là MỘT câu lệnh, kết thúc bằng dấu ; duy nhất
+builder.Services.AddDefaultIdentity<IdentityUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<dbContext>(); // <--- Chuỗi lệnh hoàn chỉnh
 
 
 //khởi tạo model GPT

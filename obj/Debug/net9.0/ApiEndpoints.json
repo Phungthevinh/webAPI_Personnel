@@ -52,8 +52,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "WebAPI.models.Users",
+        "Name": "role_User",
+        "Type": "WebAPI.models.role_user",
         "IsRequired": true
       }
     ],

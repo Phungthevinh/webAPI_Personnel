@@ -1,9 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using WebAPI.models;
 
 namespace WebAPI.Services
 {
-    public class dbContext(DbContextOptions<dbContext> options) : DbContext(options)
+    public class dbContext(DbContextOptions<dbContext> options) : IdentityDbContext(options)
     {
         public DbSet<Users> users { get; set; }
         public DbSet<ai_prompts> ai_prompts { get; set; }

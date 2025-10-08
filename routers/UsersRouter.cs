@@ -12,11 +12,11 @@ namespace WebAPI.routers
     {
         public UsersRouter(WebApplication app, string keyJWT, string Issuer, string Audience)
         {
-            //đăng ký tài khoản cho KOL
-            app.MapPost("/dangky", (Users user, dbContext dbContext) =>
+            //đăng ký tài khoản cho KOC
+            app.MapPost("/dangky", (role_user role_User, dbContext dbContext) =>
             {
                 UsersControlers u = new UsersControlers(dbContext);
-                return u.addUsers(user);
+                return u.addUsers(role_User);
                 
             });
 
@@ -27,7 +27,7 @@ namespace WebAPI.routers
                 return tokenHandler.dangnhap(dangnhap, keyJWT, Issuer, Audience);
             });
 
-            //lấy ra thông tin sau khi đăng nhập
+            //lấy ra thông tin sau khi đăng nhập có nghĩa là đăng nhập và sẽ trả về thông tin đăng nhập cho người đã đăng nhập
             app.MapGet("/thong-tin-sau-khi-dang-nhap", [Authorize] (ClaimsPrincipal user, dbContext dbContext) =>
             {
                 UsersControlers tokenHandler = new UsersControlers(dbContext);

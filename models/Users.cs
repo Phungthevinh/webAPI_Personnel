@@ -49,4 +49,9 @@ namespace WebAPI.models
             get { return is_KOI; }
         }
     }
+    //đăng ký chức vụ hoặc vai trò với người dùng
+    public class role_user: Users
+    {
+        public long role_id { get; set; }
+    }
 }

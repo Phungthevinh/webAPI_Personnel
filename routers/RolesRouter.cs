@@ -26,7 +26,7 @@ namespace WebAPI.routers
 
             //cập nhập vai trò
             //xóa vai trò
-            app.MapDelete("xoa-vai-tro", (dbContext db, int id) =>
+            app.MapDelete("xoa-vai-tro",[Authorize] (dbContext db, int id) =>
             {
                 RolesController xoaVaiTro = new RolesController(db);
                 return xoaVaiTro.xoaVaiTro(id);

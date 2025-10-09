@@ -10,7 +10,7 @@ namespace WebAPI.models
         public long id {  get; set; }
         public string name { get; set; }
         public string description { get; set; } 
-        public DateTime created_at { get; set; }
+        public DateTime? created_at { get; set; }
         public List<user_roles> user_Roles { get; set; }
     }
 

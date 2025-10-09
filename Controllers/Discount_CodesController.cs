@@ -1,4 +1,5 @@
-﻿using Npgsql;
+﻿using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using WebAPI.models;
 using WebAPI.Services;
 
@@ -18,7 +19,6 @@ namespace WebAPI.Controllers
             try
             {
                 discount_Codes.Deactivate();
-                Console.WriteLine(discount_Codes.is_active);
                 _db.Add(new discount_codes
                 {
                     code = discount_Codes.code,
@@ -37,21 +37,26 @@ namespace WebAPI.Controllers
         }
 
         //kích hoạt mã giảm giá
-        //public async Task<string> kichhoatmagiamgia(Discount_Codes discount_Codes, NpgsqlDataSource db)
-        //{
-        //    await using var connection = await db.OpenConnectionAsync();
-        //    discount_Codes.Activate();
-        //    await using var cmd = new NpgsqlCommand("UPDATE Discount_Codes SET is_active = $1 Where code = $2;", connection)
-        //    {
-        //        Parameters =
-        //                 {
-        //                    new() { Value = discount_Codes.Is_active },
-        //                    new() { Value = discount_Codes.Code },
-        //                 }
-        //    };
-        //    await cmd.ExecuteNonQueryAsync();
-        //    return "kích hoạt thành công";
-        //}
+        public async Task<IResult> kichhoatmagiamgia(discount_codes discount_Codes)
+        {
+            try
+            {
+                discount_Codes.Activate();
+                var activeCode = await _db.discount_codes
+                    .Where(d => d.id == discount_Codes.id)
+                    .FirstOrDefaultAsync();
+
+                activeCode.is_active = discount_Codes.is_active;
+                activeCode.valid_from = discount_Codes.valid_from;
+                activeCode.valid_until = discount_Codes.valid_until;
+
+                await _db.SaveChangesAsync();
+                return Results.Ok(200);
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
 
         //khóa mã giảm giá
         //public async Task<string> khoamagiamgia(Discount_Codes discount_Codes, NpgsqlDataSource db)

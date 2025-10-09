@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:models\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\rolesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\rolesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\models\\discount_codes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:models\\discount_codes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\kol_profilesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\kol_profilesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\discount_codescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\discount_codescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,89 +35,67 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Roles.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\models\\Roles.cs",
-              "RelativeDocumentMoniker": "models\\Roles.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\models\\Roles.cs",
-              "RelativeToolTip": "models\\Roles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T00:54:40.422Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-09T02:43:35.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RolesRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\RolesRouter.cs",
-              "RelativeDocumentMoniker": "routers\\RolesRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\RolesRouter.cs",
-              "RelativeToolTip": "routers\\RolesRouter.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "dbContext.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
+              "RelativeDocumentMoniker": "Services\\dbContext.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
+              "RelativeToolTip": "Services\\dbContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wA0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T00:39:48.005Z",
+              "WhenOpened": "2025-10-09T02:27:17.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Discount_CodesRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
+              "RelativeDocumentMoniker": "routers\\Discount_CodesRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
+              "RelativeToolTip": "routers\\Discount_CodesRouter.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T01:51:36.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "KOL_ProfilesRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\KOL_ProfilesRouter.cs",
-              "RelativeDocumentMoniker": "routers\\KOL_ProfilesRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\KOL_ProfilesRouter.cs",
-              "RelativeToolTip": "routers\\KOL_ProfilesRouter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Discount_CodesController.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Discount_CodesController.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
+              "RelativeToolTip": "Controllers\\Discount_CodesController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowCcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T00:39:33.212Z",
+              "WhenOpened": "2025-10-09T01:51:30.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\models\\Users.cs",
-              "RelativeDocumentMoniker": "models\\Users.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\models\\Users.cs",
-              "RelativeToolTip": "models\\Users.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwDQAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Discount_Codes.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\models\\Discount_Codes.cs",
+              "RelativeDocumentMoniker": "models\\Discount_Codes.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\models\\Discount_Codes.cs",
+              "RelativeToolTip": "models\\Discount_Codes.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAWwBQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T09:11:50.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAhwE4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T08:02:57.509Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UsersRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
-              "RelativeDocumentMoniker": "routers\\UsersRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
-              "RelativeToolTip": "routers\\UsersRouter.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T07:53:38.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsersControlers.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\UsersControlers.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersControlers.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\UsersControlers.cs",
-              "RelativeToolTip": "Controllers\\UsersControlers.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAAAC4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-08T06:38:01.204Z"
+              "WhenOpened": "2025-10-09T01:51:27.16Z",
+              "EditorCaption": ""
             }
           ]
         }

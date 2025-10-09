@@ -18,7 +18,7 @@ namespace WebAPI.models
         public float discount_value { get; set; }
         public DateTime valid_from { get; set; }
         public DateTime valid_until { get; set; }
-        public bool is_active { get; set; }
+        public bool? is_active { get; set; }
         public long kol_id { get; set; }
         [ForeignKey("kol_id")]
         public Users user { get; set; }

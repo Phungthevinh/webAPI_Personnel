@@ -12,6 +12,7 @@ namespace WebAPI.Services
         public DbSet<Roles> roles { get; set; }
         public DbSet<Permissions> permissions { get; set; }
         public DbSet<user_roles> user_roles { get; set; }
+        public DbSet<discount_codes> discount_codes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

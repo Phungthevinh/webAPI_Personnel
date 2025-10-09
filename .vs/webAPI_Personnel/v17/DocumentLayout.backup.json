@@ -34,8 +34,7 @@
               "RelativeToolTip": "models\\Discount_Codes.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwB0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T01:48:35.163Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T01:48:35.163Z"
             },
             {
               "$type": "Document",
@@ -45,7 +44,7 @@
               "RelativeDocumentMoniker": "Controllers\\Discount_CodesController.cs",
               "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
               "RelativeToolTip": "Controllers\\Discount_CodesController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAABRAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-09T01:48:19.194Z",
               "EditorCaption": ""
@@ -60,8 +59,7 @@
               "RelativeToolTip": "routers\\Discount_CodesRouter.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T01:47:48.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T01:47:48.151Z"
             }
           ]
         }

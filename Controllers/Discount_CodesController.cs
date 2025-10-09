@@ -24,6 +24,8 @@ namespace WebAPI.Controllers
                     code = discount_Codes.code,
                     kol_id = discount_Codes.kol_id,
                     discount_value = discount_Codes.discount_value,
+                    valid_from = discount_Codes.valid_from,
+                    valid_until = discount_Codes.valid_until,
                     is_active = discount_Codes.is_active
                 });
                 await _db.SaveChangesAsync();
@@ -47,8 +49,6 @@ namespace WebAPI.Controllers
                     .FirstOrDefaultAsync();
 
                 activeCode.is_active = discount_Codes.is_active;
-                activeCode.valid_from = discount_Codes.valid_from;
-                activeCode.valid_until = discount_Codes.valid_until;
 
                 await _db.SaveChangesAsync();
                 return Results.Ok(200);

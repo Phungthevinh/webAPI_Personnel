@@ -59,20 +59,23 @@ namespace WebAPI.Controllers
         }
 
         //khóa mã giảm giá
-        //public async Task<string> khoamagiamgia(Discount_Codes discount_Codes, NpgsqlDataSource db)
-        //{
-        //    await using var connection = await db.OpenConnectionAsync();
-        //    discount_Codes.Deactivate();
-        //    await using var cmd = new NpgsqlCommand("UPDATE Discount_Codes SET is_active = $1 Where code = $2;", connection)
-        //    {
-        //        Parameters =
-        //                 {
-        //                    new() { Value = discount_Codes.Is_active },
-        //                    new() { Value = discount_Codes.Code },
-        //                 }
-        //    };
-        //    await cmd.ExecuteNonQueryAsync();
-        //    return "khóa thành công";
-        //}
+        public async Task<IResult> khoamagiamgia(discount_codes discount_Codes)
+        {
+            try
+            {
+
+                discount_Codes.Deactivate();
+                var lockDiscount = await _db.discount_codes
+                    .Where(d => d.id == discount_Codes.id)
+                    .FirstOrDefaultAsync();
+                lockDiscount.is_active = discount_Codes.is_active;
+                await _db.SaveChangesAsync();
+
+                return Results.Ok(200);
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
     }
 }

@@ -91,6 +91,28 @@
   },
   {
     "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
+    "RelativePath": "khoa-ma-giam-gia",
+    "HttpMethod": "PATCH",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discount_codes",
+        "Type": "WebAPI.models.discount_codes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_1",
     "RelativePath": "kich-hoat-ma-giam-gia",
     "HttpMethod": "PATCH",

@@ -25,11 +25,11 @@ namespace WebAPI.routers
             });
 
             //khóa mã giảm giá
-            //app.MapPatch("/khoa-ma-giam-gia", [Authorize] (Discount_Codes discount_codes) =>
-            //{
-            //    Discount_CodesController discount_CodesController = new Discount_CodesController();
-            //    return discount_CodesController.khoamagiamgia(discount_codes, db);
-            //});
+            app.MapPatch("/khoa-ma-giam-gia", [Authorize] (discount_codes discount_codes, dbContext db) =>
+            {
+                Discount_CodesController discount_CodesController = new Discount_CodesController(db);
+                return discount_CodesController.khoamagiamgia(discount_codes);
+            });
         }
     }
 }

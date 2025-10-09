@@ -179,5 +179,37 @@ namespace WebAPI.Controllers
                 return Results.BadRequest(ex.Message);
             }
         }
+
+        //người dùng với chức vụ KOC và mã giảm giá chưa duyệt, đã duyệt
+        public async Task<IResult> magiamgiavanguoidung()
+        {
+            try
+            {
+                var flatUsersDiscount = await _dbContext.users
+     // Chỉ lấy user có mã giảm giá (tạo INNER JOIN)
+     .Where(u => u.discount_Codes.Any())
+     .SelectMany(user => user.discount_Codes.Select(code => new
+     {
+         id = user.id,
+         name = user.full_name,
+         email = user.email,
+         magiamgia = new
+         {
+             code = code.code,
+             ngaybatdau = code.valid_from,
+             ngayketthuc = code.valid_until,
+             trangthai = code.is_active
+         }
+     }))
+     .OrderBy(result => result.id) // Sắp xếp kết quả cuối cùng nếu cần
+     .ToListAsync();
+                return Results.Ok(new { flatUsersDiscount });
+
+            }catch (Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
+
     }
 }

@@ -134,6 +134,22 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_4",
+    "RelativePath": "ma-giam-gia-kem-KOC",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_1",
     "RelativePath": "promts",
@@ -200,7 +216,7 @@
   },
   {
     "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_4",
+    "Method": "\u003C.ctor\u003Eb__0_5",
     "RelativePath": "test",
     "HttpMethod": "GET",
     "IsController": false,

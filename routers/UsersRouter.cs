@@ -41,6 +41,13 @@ namespace WebAPI.routers
                 return nguoiDungVaChucVu.tatCaNguoiDungVaThongTinCuaNguoiDung();
             });
 
+            //lấy ra mã giảm giá kèm KOC tương ứng với mã giảm giá đó
+            app.MapGet("/ma-giam-gia-kem-KOC", (dbContext dbContext) =>
+            {
+                UsersControlers kocDiscount = new UsersControlers(dbContext);
+                return kocDiscount.magiamgiavanguoidung();
+            });
+
             app.MapGet("/test", () => "xin chao");
         }
     }

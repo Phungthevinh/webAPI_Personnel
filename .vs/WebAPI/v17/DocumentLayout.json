@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\chataicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\chataicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -35,6 +39,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "chatAIController.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\chatAIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\chatAIController.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\chatAIController.cs",
+              "RelativeToolTip": "Controllers\\chatAIController.cs",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAswHQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-09T03:13:49.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -47,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "dbContext.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
               "RelativeDocumentMoniker": "Services\\dbContext.cs",
@@ -55,12 +72,11 @@
               "RelativeToolTip": "Services\\dbContext.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA1wA0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T02:27:17.125Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T02:27:17.125Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Discount_CodesRouter.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
               "RelativeDocumentMoniker": "routers\\Discount_CodesRouter.cs",
@@ -68,12 +84,11 @@
               "RelativeToolTip": "routers\\Discount_CodesRouter.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAzwBQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T01:51:36.891Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T01:51:36.891Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Discount_CodesController.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
               "RelativeDocumentMoniker": "Controllers\\Discount_CodesController.cs",
@@ -81,12 +96,11 @@
               "RelativeToolTip": "Controllers\\Discount_CodesController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAowCcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T01:51:30.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T01:51:30.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Discount_Codes.cs",
               "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\models\\Discount_Codes.cs",
               "RelativeDocumentMoniker": "models\\Discount_Codes.cs",
@@ -94,8 +108,7 @@
               "RelativeToolTip": "models\\Discount_Codes.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAWwBQAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T01:51:27.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T01:51:27.16Z"
             }
           ]
         }

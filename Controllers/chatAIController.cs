@@ -114,7 +114,7 @@ namespace WebAPI.Controllers
         public async Task<IResult> chatvoiAIGPT([FromBody] chatAI message)
         {
             var ai_promt = await _dbContext.ai_prompts
-                .Where(ai => ai.id == 4)
+                .Where(ai => ai.id == 1)
                 .FirstOrDefaultAsync();
             string systemPrompt = @"
             Bạn là một trợ lý ảo tên là DT-BOT, bạn chỉ được phép trả lời dựa trên 'BỘ QUY TRÌNH' được cung cấp dưới đây.

@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers",
-    "\\models",
-    "\\routers"
+    "\\Controllers"
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\Controllers\\UsersControlers.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAByAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-09T09:45:24.235Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "compose.yaml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-10-09T09:45:22.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:45:22.487Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "routers\\UsersRouter.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAQwC8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:15:51.554Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:15:51.554Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "Controllers\\UsersControlers.cs",
               "ViewState": "AgIAALwAAAAAAAAAAAAgwMUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:04:37.565Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:04:37.565Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "models\\Users.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-09T09:03:06.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-09T09:03:06.941Z"
             }
           ]
         }

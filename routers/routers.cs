@@ -14,6 +14,7 @@ namespace WebAPI.routers
             chatAIRouter ChatAIRouter = new chatAIRouter(app);
             RolesRouter rolesRouter = new RolesRouter(app);
             PermissionsRouter permissionsRouter = new PermissionsRouter(app);
+            campaignsRouter campaignsRouter = new campaignsRouter(app);
         }
     }
 }

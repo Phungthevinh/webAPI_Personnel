@@ -1,0 +1,39 @@
+﻿using WebAPI.models;
+using WebAPI.Services;
+
+namespace WebAPI.Controllers
+{
+    public class campaignsController
+    {
+        dbContext _dbContext;
+        public campaignsController(dbContext dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+        //tạo mới sự kiện
+        public async Task<IResult> taoSuKienDeCTVacpMa(campaigns campaigns)
+        {
+            try
+            {
+                _dbContext.Add(new campaigns
+                {
+                    name = campaigns.name,
+                    description = campaigns.description,
+                    start_date = campaigns.start_date,
+                    end_date = campaigns.end_date,
+                    discount_type = campaigns.discount_type,
+                    discount_value = campaigns.discount_value,
+                    commission_type = campaigns.commission_type,
+                    commission_value = campaigns.commission_value,
+                });
+                await _dbContext.SaveChangesAsync();
+                return Results.Ok(200);
+            }catch (Exception ex)
+            {
+                return Results.BadRequest(ex.InnerException?.Message);
+            }
+            
+        }
+    }
+}

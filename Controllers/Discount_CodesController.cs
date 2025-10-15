@@ -14,18 +14,26 @@ namespace WebAPI.Controllers
         }
 
         //thêm mới mã giảm giá
-        public async Task<IResult> themmoimagiamgia(discount_codes discount_Codes)
+        public async Task<IResult> themmoimagiamgiatheoSukien(discount_codes discount_Codes)
         {
             try
             {
                 discount_Codes.Deactivate();
+                var random = new System.Random();
+
+                int randomNumber = random.Next(1000);
+
+                var sukien = await _db.campaigns
+                    .Where(c => c.id == discount_Codes.campaign_id)
+                    .FirstOrDefaultAsync();
+
+                string code = $"{sukien.name}{discount_Codes.kol_id*randomNumber}{sukien.discount_value}";
+                Console.WriteLine(code);
                 _db.Add(new discount_codes
                 {
-                    code = discount_Codes.code,
+                    code = code,
                     kol_id = discount_Codes.kol_id,
-                    discount_value = discount_Codes.discount_value,
-                    valid_from = discount_Codes.valid_from,
-                    valid_until = discount_Codes.valid_until,
+                    campaign_id = discount_Codes.campaign_id,
                     is_active = discount_Codes.is_active
                 });
                 await _db.SaveChangesAsync();
@@ -36,46 +44,6 @@ namespace WebAPI.Controllers
             }
 
 
-        }
-
-        //kích hoạt mã giảm giá
-        public async Task<IResult> kichhoatmagiamgia(discount_codes discount_Codes)
-        {
-            try
-            {
-                discount_Codes.Activate();
-                var activeCode = await _db.discount_codes
-                    .Where(d => d.id == discount_Codes.id)
-                    .FirstOrDefaultAsync();
-
-                activeCode.is_active = discount_Codes.is_active;
-
-                await _db.SaveChangesAsync();
-                return Results.Ok(200);
-            }catch(Exception ex)
-            {
-                return Results.BadRequest(ex.Message);
-            }
-        }
-
-        //khóa mã giảm giá
-        public async Task<IResult> khoamagiamgia(discount_codes discount_Codes)
-        {
-            try
-            {
-
-                discount_Codes.Deactivate();
-                var lockDiscount = await _db.discount_codes
-                    .Where(d => d.id == discount_Codes.id)
-                    .FirstOrDefaultAsync();
-                lockDiscount.is_active = discount_Codes.is_active;
-                await _db.SaveChangesAsync();
-
-                return Results.Ok(200);
-            }catch(Exception ex)
-            {
-                return Results.BadRequest(ex.Message);
-            }
         }
     }
 }

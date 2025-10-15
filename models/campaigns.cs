@@ -21,8 +21,8 @@ namespace WebAPI.models
         public bool status { get; set; } = true;
         public DateTime created_at { get; set; } = DateTime.UtcNow;
         public DateTime updated_at { get; set ; }
+
+        public List<discount_codes> discount_Codes { get; set; } = new List<discount_codes>();
        
-
-
     }
 }

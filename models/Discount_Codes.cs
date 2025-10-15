@@ -15,13 +15,13 @@ namespace WebAPI.models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         public string code { get; set; }
-        public float discount_value { get; set; }
-        public DateTime valid_from { get; set; }
-        public DateTime valid_until { get; set; }
         public bool? is_active { get; set; }
         public long kol_id { get; set; }
+        public long campaign_id { get; set; }
         [ForeignKey("kol_id")]
         public Users user { get; set; }
+        [ForeignKey("campaign_id")]
+        public campaigns campaigns { get; set; }
 
         public void Activate()
         {

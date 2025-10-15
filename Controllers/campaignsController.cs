@@ -1,4 +1,5 @@
-﻿using WebAPI.models;
+﻿using Microsoft.EntityFrameworkCore;
+using WebAPI.models;
 using WebAPI.Services;
 
 namespace WebAPI.Controllers
@@ -34,6 +35,22 @@ namespace WebAPI.Controllers
                 return Results.BadRequest(ex.InnerException?.Message);
             }
             
+        }
+
+        //xem tất cả sự kiện
+        public async Task<IResult> xemtatcasukien()
+        {
+            try
+            {
+                var xemsukien = await _dbContext.campaigns
+                    .OrderBy(c => c.id)
+                    .ToListAsync();
+
+                return Results.Ok(new {xemsukien});
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
         }
     }
 }

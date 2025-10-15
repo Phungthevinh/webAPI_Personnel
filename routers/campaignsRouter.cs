@@ -17,7 +17,8 @@ namespace WebAPI.routers
             //xem tất cả các sự kiện giảm giá
             app.MapGet("/su-kien-giam-gia", (dbContext dbContext) =>
             {
-
+                campaignsController xemsukien = new campaignsController(dbContext);
+                return xemsukien.xemtatcasukien();
             });
         }
     }

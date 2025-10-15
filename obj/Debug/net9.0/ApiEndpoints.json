@@ -161,6 +161,22 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.campaignsRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_1",
+    "RelativePath": "su-kien-giam-gia",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.PermissionsRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_3",
     "RelativePath": "sua-quyen-han",

@@ -479,6 +479,28 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.campaignsRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_3",
+    "RelativePath": "xoa-su-kien",
+    "HttpMethod": "DELETE",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.RolesRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_2",
     "RelativePath": "xoa-vai-tro",

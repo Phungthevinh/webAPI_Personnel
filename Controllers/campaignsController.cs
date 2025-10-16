@@ -66,5 +66,22 @@ namespace WebAPI.Controllers
                 return Results.BadRequest(ex.Message);
             }
         }
+        //xóa sự chiến dịch sự kiện
+        public async Task<IResult> xoachiendich(int id)
+        {
+            try
+            {
+                var xoa = await _dbContext.campaigns
+                    .Where(c => c.id == id)
+                    .FirstOrDefaultAsync();
+
+                _dbContext.Remove(xoa);
+                await _dbContext.SaveChangesAsync();
+                return Results.Ok(200);
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
     }
 }

@@ -27,6 +27,12 @@ namespace WebAPI.routers
                 campaignsController chiTietSuKien = new campaignsController(dbContext);
                 return chiTietSuKien.xemchitietsukien(id);
             });
+            // xóa chiến dịch sự kiện
+            app.MapDelete("/xoa-su-kien",[Authorize] (int id, dbContext dbContext) =>
+            {
+                campaignsController xoa = new campaignsController(dbContext);
+                return xoa.xoachiendich(id);
+            });
         }
     }
 }

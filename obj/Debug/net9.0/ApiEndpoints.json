@@ -22,6 +22,28 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.campaignsRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
+    "RelativePath": "chi-tiet-su-kien",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_2",
     "RelativePath": "chinh-sua-promts",

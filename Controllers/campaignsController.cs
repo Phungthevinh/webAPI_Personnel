@@ -52,5 +52,19 @@ namespace WebAPI.Controllers
                 return Results.BadRequest(ex.Message);
             }
         }
+        //xem chi tiết sự kiện
+        public async Task<IResult> xemchitietsukien(int id)
+        {
+            try
+            {
+                var xemchitietsukien = from db in _dbContext.campaigns
+                                       where db.id == id
+                                       select db;
+                return Results.Ok(new {xemchitietsukien});
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
     }
 }

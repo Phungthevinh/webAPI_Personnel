@@ -21,6 +21,12 @@ namespace WebAPI.routers
                 campaignsController xemsukien = new campaignsController(dbContext);
                 return xemsukien.xemtatcasukien();
             });
+            //xem chi tiết sự kiện mã giảm giá
+            app.MapGet("/chi-tiet-su-kien", [Authorize] (int id, dbContext dbContext) =>
+            {
+                campaignsController chiTietSuKien = new campaignsController(dbContext);
+                return chiTietSuKien.xemchitietsukien(id);
+            });
         }
     }
 }

@@ -112,6 +112,28 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_1",
+    "RelativePath": "ma-giam-gia-va-su-kien-tuong-ung",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kol_id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_1",
     "RelativePath": "promts",

@@ -45,5 +45,20 @@ namespace WebAPI.Controllers
 
 
         }
+        //xem mã giảm giá tương ứng với sự kiện nào
+        public async Task<IResult> maGiamGiaTuongUngSuKien(int kol_id)
+        {
+            try
+            {
+                var dsmagiamgia = from discount_code in _db.discount_codes
+                                  where discount_code.kol_id == kol_id
+                                  join campaign in _db.campaigns on discount_code.campaign_id equals campaign.id
+                                  select new { nameEvent = campaign.name, codes = discount_code.code, start_day = campaign.start_date, end_day = campaign.end_date, discount_value = campaign.discount_value, commission_value = campaign.commission_value };
+                return Results.Ok(dsmagiamgia);
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
     }
 }

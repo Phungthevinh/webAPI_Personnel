@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Controllers"
+    "\\Controllers",
+    "\\routers"
   ],
-  "SelectedNode": "\\appsettings.json",
+  "SelectedNode": "\\routers\\campaignsRouter.cs",
   "PreviewInSolutionExplorer": false
 }

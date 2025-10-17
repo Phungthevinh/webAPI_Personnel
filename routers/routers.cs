@@ -15,6 +15,7 @@ namespace WebAPI.routers
             RolesRouter rolesRouter = new RolesRouter(app);
             PermissionsRouter permissionsRouter = new PermissionsRouter(app);
             campaignsRouter campaignsRouter = new campaignsRouter(app);
+            usedDiscountCodeRouter usedDiscountCodeRouter = new usedDiscountCodeRouter(app);
         }
     }
 }

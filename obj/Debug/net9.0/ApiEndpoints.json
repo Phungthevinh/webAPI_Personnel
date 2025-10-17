@@ -113,6 +113,28 @@
   },
   {
     "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
+    "RelativePath": "gia-tri-ma-giam",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "discount_Codes",
+        "Type": "WebAPI.models.discount_codes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_1",
     "RelativePath": "ma-giam-gia-va-su-kien-tuong-ung",
     "HttpMethod": "GET",
@@ -250,6 +272,28 @@
         "MediaTypes": [
           "text/plain"
         ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.usedDiscountCodeRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
+    "RelativePath": "them-ma-giam-gia-va-nguoi-su-dung",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "used_Discount_code",
+        "Type": "WebAPI.models.Used_Discount_Codes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
         "StatusCode": 200
       }
     ]

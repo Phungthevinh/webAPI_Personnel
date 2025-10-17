@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\useddiscountcoderouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\useddiscountcoderouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\campaignsrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\campaignsrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\campaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\campaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbContext.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
-              "RelativeDocumentMoniker": "Services\\dbContext.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
-              "RelativeToolTip": "Services\\dbContext.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T04:11:55.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "campaignsRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\campaignsRouter.cs",
-              "RelativeDocumentMoniker": "routers\\campaignsRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\campaignsRouter.cs",
-              "RelativeToolTip": "routers\\campaignsRouter.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAbAAAAAAAAAA==",
+              "Title": "usedDiscountCodeRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\usedDiscountCodeRouter.cs",
+              "RelativeDocumentMoniker": "routers\\usedDiscountCodeRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\usedDiscountCodeRouter.cs",
+              "RelativeToolTip": "routers\\usedDiscountCodeRouter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T04:05:07.897Z",
+              "WhenOpened": "2025-10-17T08:17:04.586Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "campaignsController.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\campaignsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\campaignsController.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\campaignsController.cs",
-              "RelativeToolTip": "Controllers\\campaignsController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwEsAAAArAAAAAAAAAA==",
+              "Title": "Discount_CodesRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
+              "RelativeDocumentMoniker": "routers\\Discount_CodesRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
+              "RelativeToolTip": "routers\\Discount_CodesRouter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-16T03:57:52.946Z",
+              "WhenOpened": "2025-10-17T08:15:29.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-16T03:37:23.99Z",
+              "DocumentIndex": 2,
+              "Title": "campaignsRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\campaignsRouter.cs",
+              "RelativeDocumentMoniker": "routers\\campaignsRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\campaignsRouter.cs",
+              "RelativeToolTip": "routers\\campaignsRouter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T08:15:10.641Z",
               "EditorCaption": ""
             }
           ]

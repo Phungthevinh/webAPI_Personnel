@@ -1,4 +1,20 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿//⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⣉⡉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠀⠚⠛⠛⠛⠛⠂⠀⠀⠀⠀⠀⠀⠀⠀
+//⠀⠀⠀⠀⠀⣠⣴⣶⣾⣿⣿⣿⣿⣶⣶⣦⣀⠀⠀⠀⠀⠀
+//⠀⠀⠀⢠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀
+//⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀
+//⠀⠀⣾⣿⡿⠁⠀⠈⠙⠛⠻⠛⠛⠉⠀⠀⢻⣿⣿⣧⠀⠀
+//⣠⣴⣿⡿⠁⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠹⣿⣿⣤⣄
+//⣿⡉⠛⠁⠀⠀⠀⠀⠀⠀⠻⠃⠀⠀⠀⠀⠀⠀⠙⠛⢩⣿
+//⢹⡇⠀⣤⠀⠠⣤⣠⣤⠄⠀⠀⢤⣄⣠⡤⠀⢠⡀⢠⣿⠁
+//⢸⣇⠀⢻⡇⠀⠈⠉⠁⠀⠀⠀⠀⠉⠉⠀⢀⣿⠃⢸⣿⠀
+//⠸⣿⠀⢸⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠀⢸⡿⠀
+//⠀⢿⣆⣾⠟⣿⡀⠀⠐⠶⠶⠶⠖⠀⠀⣼⠏⢿⣦⣾⠃⠀
+//⠀⠀⠉⠁⠀⠈⠻⣦⡀⠀⠀⠀⢀⣠⣾⠋⠀⠀⠉⠁⠀⠀
+//⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⠶⠿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀
+
+using Microsoft.EntityFrameworkCore;
 using WebAPI.models;
 using WebAPI.Services;
 
@@ -80,7 +96,7 @@ namespace WebAPI.Controllers
                 return Results.Ok(200);
             }catch(Exception ex)
             {
-                return Results.BadRequest(ex.Message);
+                return Results.BadRequest(ex.InnerException.Message);
             }
         }
     }

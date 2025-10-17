@@ -17,10 +17,16 @@ namespace WebAPI.routers
                 return discount_CodesController.themmoimagiamgiatheoSukien(discount_codes);
             });
             //xem mã giảm giá cho từng koc và sự kiện tương ứng
-            app.MapGet("/ma-giam-gia-va-su-kien-tuong-ung", (dbContext dbContext, int kol_id) =>
+            app.MapGet("/ma-giam-gia-va-su-kien-tuong-ung",[Authorize] (dbContext dbContext, int kol_id) =>
             {
                 Discount_CodesController xemmagiamgiavasukien = new Discount_CodesController(dbContext);
                 return xemmagiamgiavasukien.maGiamGiaTuongUngSuKien(kol_id);
+            });
+            //trả về giá trị giảm giá khi khách hàng acp mã
+            app.MapPost("/gia-tri-ma-giam", (dbContext dbContext, discount_codes discount_Codes) =>
+            {
+                Discount_CodesController giaTriMaGiam = new Discount_CodesController(dbContext);
+                return giaTriMaGiam.giaTriMaGiam(discount_Codes);
             });
         }
     }

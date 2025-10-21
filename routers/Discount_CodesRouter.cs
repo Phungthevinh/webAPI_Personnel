@@ -10,7 +10,7 @@ namespace WebAPI.routers
     {
         public Discount_CodesRouter(WebApplication app)
         {
-            //KOC sẽ thêm mới mã giảm giá của mình và chờ được duyệt
+            //KOC sẽ thêm mới mã giảm giá của mình 
             app.MapPost("/them-moi-ma-giam-gia-theo-su-kien", [Authorize] (discount_codes discount_codes, dbContext dbContext) =>
             {
                 Discount_CodesController discount_CodesController = new Discount_CodesController(dbContext);

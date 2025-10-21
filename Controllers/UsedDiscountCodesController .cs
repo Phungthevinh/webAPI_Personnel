@@ -24,7 +24,7 @@ namespace WebAPI.Controllers
         {
             _dbContext = dbContext;
         }
-        //thêm người dùng và mã giảm giá đã được sử dụng
+        //lưu đơn hàng sử dụng mã, và mã giảm giá cùng các giá trị tương ứng
         public async Task<IResult> nguoiDungSuDungMaGiamGia(Used_Discount_Codes used_Discount_Codes)
         {
             try
@@ -33,12 +33,15 @@ namespace WebAPI.Controllers
                                 
                 if (!checkUsed)
                 {
+                    PricingService discount_amount_applied = new PricingService(_dbContext);
+                    discount_amount_applied.CalculateFinalAmount(used_Discount_Codes);
                     _dbContext.Add(new Used_Discount_Codes
                     {
                         code = used_Discount_Codes.code,
                         phone = used_Discount_Codes.phone,
                         order_value = used_Discount_Codes.order_value,
                         discount_amount_applied = used_Discount_Codes.discount_amount_applied,
+                        order_id = used_Discount_Codes.order_id,
                         used_at = DateTime.UtcNow
                     });
                     await _dbContext.SaveChangesAsync();

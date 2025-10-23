@@ -28,11 +28,7 @@ namespace WebAPI.Controllers
         public async Task<IResult> nguoiDungSuDungMaGiamGia(Used_Discount_Codes used_Discount_Codes)
         {
             try
-            {
-                var checkUsed = _dbContext.used_discount_codes.Any( u => u.code == used_Discount_Codes.code && u.phone == used_Discount_Codes.phone);
-                                
-                if (!checkUsed)
-                {
+            {         
                     PricingService discount_amount_applied = new PricingService(_dbContext);
                     discount_amount_applied.CalculateFinalAmount(used_Discount_Codes);
                     _dbContext.Add(new Used_Discount_Codes
@@ -46,8 +42,7 @@ namespace WebAPI.Controllers
                     });
                     await _dbContext.SaveChangesAsync();
                     return Results.Ok(200);
-                }
-                return Results.BadRequest("mã giảm giá đã được sử dụng");
+                
             }catch(Exception ex)
             {
                 return Results.BadRequest(ex.InnerException.Message);

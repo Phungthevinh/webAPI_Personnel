@@ -2,11 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\models",
     "\\routers",
     "\\Services",
     "\\Services\\Interfaces"
   ],
-  "SelectedNode": "\\Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
+  "SelectedNode": "\\Controllers\\UsedDiscountCodesController .cs",
   "PreviewInSolutionExplorer": false
 }

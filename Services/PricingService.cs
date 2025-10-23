@@ -12,7 +12,6 @@ namespace WebAPI.Services
         }
         public decimal CalculateFinalAmount(Used_Discount_Codes used_Discount_Codes)
         {
-            
             var discount_value = (from code in _dbContext.discount_codes
                                  where used_Discount_Codes.code == code.code
                                  join campaign in _dbContext.campaigns on code.campaign_id equals campaign.id

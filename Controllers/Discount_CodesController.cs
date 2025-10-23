@@ -20,8 +20,10 @@
 
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
+using WebAPI.DTOs.used_discount_code;
 using WebAPI.models;
 using WebAPI.Services;
+using WebAPI.Services.Interfaces;
 
 namespace WebAPI.Controllers
 {
@@ -81,15 +83,19 @@ namespace WebAPI.Controllers
             }
         }
         //trả về giá trị giảm giá khi khách hàng acp mã
-        public async Task<IResult> giaTriMaGiam(discount_codes discount_Codes)
+        public async Task<IResult> giaTriMaGiam(usedDiscountCode usedDiscountCode)
         {
             try
             {
-                var checkUsed = _db.used_discount_codes.Any(u => u.code == discount_Codes.code && u.phone == used_Discount_Codes.phone);
+                DiscountUsageChecker DUC = new DiscountUsageChecker(_db);
+                IDiscountCodeUsageRepository IDUC = DUC;
+                bool result = await IDUC.HasUserUsedCodeAsync(usedDiscountCode);
+                if (result)
+                    return Results.BadRequest(422);
                 var giatri = from discount_code in _db.discount_codes
-                             where discount_code.code == discount_Codes.code
+                             where discount_code.code == usedDiscountCode.code
                              join campaign in _db.campaigns on discount_code.campaign_id equals campaign.id
-                             select new {  campaign.discount_value, campaign.discount_type };
+                             select new { campaign.discount_value, campaign.discount_type };
                 return Results.Ok(giatri);
             }catch(Exception ex)
             {

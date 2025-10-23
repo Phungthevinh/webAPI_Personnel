@@ -87,7 +87,7 @@ namespace WebAPI.Controllers
                 if (promts != null)
                 {
                     _dbContext.ai_prompts.Remove(promts);
-                    _dbContext.SaveChanges();
+                    await _dbContext.SaveChangesAsync();
                 }
 
                 return Results.Ok(200);

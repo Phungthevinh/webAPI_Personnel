@@ -1,9 +1,10 @@
-﻿using WebAPI.models;
+﻿using WebAPI.DTOs.used_discount_code;
+using WebAPI.models;
 
 namespace WebAPI.Services.Interfaces
 {
     public interface IDiscountCodeUsageRepository
     {
-        Task<bool> HasUserUsedCodeAsync(Used_Discount_Codes used_Discount_codes);
+        Task<bool> HasUserUsedCodeAsync(usedDiscountCode usedDiscountCode);
     }
 }

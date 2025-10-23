@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Npgsql;
 using WebAPI.Controllers;
+using WebAPI.DTOs.used_discount_code;
 using WebAPI.models;
 using WebAPI.Services;
 
@@ -22,11 +23,11 @@ namespace WebAPI.routers
                 Discount_CodesController xemmagiamgiavasukien = new Discount_CodesController(dbContext);
                 return xemmagiamgiavasukien.maGiamGiaTuongUngSuKien(kol_id);
             });
-            //trả về giá trị giảm giá khi khách hàng acp mã
-            app.MapPost("/gia-tri-ma-giam", (dbContext dbContext, discount_codes discount_Codes) =>
+            //trả về giá trị giảm giá và ktra mã đó đã đc khách hàng sử dụng chưa khi khách hàng acp mã
+            app.MapPost("/gia-tri-ma-giam", (dbContext dbContext, usedDiscountCode usedDiscountCode) =>
             {
                 Discount_CodesController giaTriMaGiam = new Discount_CodesController(dbContext);
-                return giaTriMaGiam.giaTriMaGiam(discount_Codes);
+                return giaTriMaGiam.giaTriMaGiam(usedDiscountCode);
             });
         }
     }

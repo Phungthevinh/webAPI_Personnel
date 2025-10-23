@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\interfaces\\idiscountcodeusagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\interfaces\\idiscountcodeusagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\pricingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\pricingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\discount_codescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\discount_codescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\interfaces\\ipricingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\interfaces\\ipricingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\discountusagechecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\discountusagechecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "IDiscountCodeUsageRepository.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T09:23:57.585Z",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T08:51:50.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PricingService.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\PricingService.cs",
-              "RelativeDocumentMoniker": "Services\\PricingService.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\PricingService.cs",
-              "RelativeToolTip": "Services\\PricingService.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwA0AAAAJAAAAAAAAAA==",
+              "Title": "Discount_CodesController.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Discount_CodesController.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
+              "RelativeToolTip": "Controllers\\Discount_CodesController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAYwGIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T09:15:29.124Z",
+              "WhenOpened": "2025-10-23T08:36:59.504Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IPricingService.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\Interfaces\\IPricingService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IPricingService.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\Interfaces\\IPricingService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IPricingService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DiscountUsageChecker.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\DiscountUsageChecker.cs",
+              "RelativeDocumentMoniker": "Services\\DiscountUsageChecker.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\DiscountUsageChecker.cs",
+              "RelativeToolTip": "Services\\DiscountUsageChecker.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAD4vxEAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T09:15:26.609Z",
+              "WhenOpened": "2025-10-23T07:54:04.611Z",
               "EditorCaption": ""
             }
           ]

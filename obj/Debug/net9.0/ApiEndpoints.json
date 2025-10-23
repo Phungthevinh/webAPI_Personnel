@@ -120,8 +120,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "discount_Codes",
-        "Type": "WebAPI.models.discount_codes",
+        "Name": "usedDiscountCode",
+        "Type": "WebAPI.DTOs.used_discount_code.usedDiscountCode",
         "IsRequired": true
       }
     ],

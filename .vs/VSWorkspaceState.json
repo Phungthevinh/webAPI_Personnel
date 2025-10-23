@@ -4,8 +4,9 @@
     "\\Controllers",
     "\\models",
     "\\routers",
-    "\\Services"
+    "\\Services",
+    "\\Services\\Interfaces"
   ],
-  "SelectedNode": "\\models\\Used_Discount_Codes.cs",
+  "SelectedNode": "\\Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
   "PreviewInSolutionExplorer": false
 }

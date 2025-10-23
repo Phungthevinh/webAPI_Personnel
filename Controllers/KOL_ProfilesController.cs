@@ -28,6 +28,7 @@ namespace WebAPI.Controllers
         {
             _dbContext = db;
         }
+        //thêm mới profile cho KOL
         public async Task<IResult> ThemmoiprofileKOL( KOL_Profiles KOL)
         {
             try
@@ -47,5 +48,11 @@ namespace WebAPI.Controllers
                 return Results.BadRequest(ex.Message);
             }
         }
+
+        //xem tất cả các mã và số lượng sử dụng mã  của từng KOC
+        //xem doanh thu mang về của từng KOC
+        //xem số tiền chiếc khấu, và % chiếc khấu cho từng KOC
+         
+
     }
 }

@@ -85,6 +85,7 @@ namespace WebAPI.Controllers
         {
             try
             {
+                var checkUsed = _db.used_discount_codes.Any(u => u.code == discount_Codes.code && u.phone == used_Discount_Codes.phone);
                 var giatri = from discount_code in _db.discount_codes
                              where discount_code.code == discount_Codes.code
                              join campaign in _db.campaigns on discount_code.campaign_id equals campaign.id

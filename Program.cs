@@ -18,6 +18,9 @@ Console.OutputEncoding = Encoding.UTF8;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Configuration
+    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+    .AddEnvironmentVariables();
 
 // Lấy config từ appsettings.json hoặc env
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");

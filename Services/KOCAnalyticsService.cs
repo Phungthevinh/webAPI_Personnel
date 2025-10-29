@@ -23,7 +23,7 @@ namespace WebAPI.Services
                                         code = c.Key,
                                         UsageCount = c.Select(x => x.phone).Distinct().Count(),
                                         TotalOrderValue = c.Sum(x => x.discount_amount_applied)
-                                    }).ToListAsync();
+                                    }).ToArrayAsync();
             kOCReportDto.CodeUsages = codeUsages;
             return kOCReportDto;
         }

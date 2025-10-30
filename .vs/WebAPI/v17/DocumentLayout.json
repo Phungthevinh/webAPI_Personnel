@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\kocanalyticsrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\kocanalyticsrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\kocanalyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\kocanalyticscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\routers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\routers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\kocanalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\kocanalyticsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\dtos\\koc\\kocdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:dtos\\koc\\kocdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KOCAnalyticsService.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\KOCAnalyticsService.cs",
-              "RelativeDocumentMoniker": "Services\\KOCAnalyticsService.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\KOCAnalyticsService.cs",
-              "RelativeToolTip": "Services\\KOCAnalyticsService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA3wBoAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "KOCDto.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\KOCDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\KOC\\KOCDto.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\KOCDto.cs",
+              "RelativeToolTip": "DTOs\\KOC\\KOCDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T08:27:26.018Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "routers.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\routers.cs",
-              "RelativeDocumentMoniker": "routers\\routers.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\routers.cs",
-              "RelativeToolTip": "routers\\routers.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:48:13.094Z",
+              "WhenOpened": "2025-10-30T07:36:17.249Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "kOCAnalyticsRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\kOCAnalyticsRouter.cs",
-              "RelativeDocumentMoniker": "routers\\kOCAnalyticsRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\kOCAnalyticsRouter.cs",
-              "RelativeToolTip": "routers\\kOCAnalyticsRouter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAkwAoAAABJAAAAAAAAAA==",
+              "Title": "dbContext.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
+              "RelativeDocumentMoniker": "Services\\dbContext.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\dbContext.cs",
+              "RelativeToolTip": "Services\\dbContext.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwvxYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:48:32.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KOCAnalyticsController.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\KOCAnalyticsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KOCAnalyticsController.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\KOCAnalyticsController.cs",
-              "RelativeToolTip": "Controllers\\KOCAnalyticsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T07:42:59.286Z",
+              "WhenOpened": "2025-10-30T08:21:21.013Z",
               "EditorCaption": ""
             }
           ]

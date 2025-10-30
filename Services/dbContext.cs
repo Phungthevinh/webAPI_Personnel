@@ -29,6 +29,12 @@ namespace WebAPI.Services
             modelBuilder.Entity<campaigns>()
                 .Property(c => c.end_date)
                 .HasColumnType("timestamp without time zone");
+
+            modelBuilder.Entity<Used_Discount_Codes>()
+                .HasOne(u => u.discount_Codes)
+                .WithMany(d => d.used_Discount_Codes)
+                .HasForeignKey(u => u.code)
+                .HasPrincipalKey(d => d.code);
         }
 
     }

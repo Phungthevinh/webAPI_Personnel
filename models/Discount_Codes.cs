@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.Extensions.Hosting;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebAPI.models
@@ -22,6 +23,8 @@ namespace WebAPI.models
         public Users user { get; set; }
         [ForeignKey("campaign_id")]
         public campaigns campaigns { get; set; }
+
+        public List<Used_Discount_Codes> used_Discount_Codes { get; set; }
 
         public void Activate()
         {

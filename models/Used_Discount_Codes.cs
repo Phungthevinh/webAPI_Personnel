@@ -25,6 +25,8 @@ namespace WebAPI.models
         public decimal discount_amount_applied { get; set; } // số tiền giảm thực tế được áp dụng
         public DateTime used_at { get; set; } // thời điểm mã được sử dụng
         public string order_id { get; set; } // mã đơn hàng được áp dụng mã
+        [ForeignKey("code")]
+        public discount_codes discount_Codes { get; set; } // khóa ngoại của discount_codes
 
     }
 }

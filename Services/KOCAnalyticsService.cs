@@ -27,7 +27,7 @@ namespace WebAPI.Services
                                     }).ToArrayAsync();
 
             var Revenues = await (from codes in _dbContext.used_discount_codes
-                                  group codes by codes.discount_Codes.user.full_name into c
+                                  group codes by codes.discount_Codes.kol_id into c
                                   select new KOCRevenueDto
                                   {
                                       TotalOrders = c.Select(x => x.code).Count(),
@@ -35,7 +35,7 @@ namespace WebAPI.Services
                                       TotalRevenue = (
                                         from TotalRevenue in c
                                         select TotalRevenue.discount_amount_applied
-                                      ).Sum(),
+                                      ).Sum(),  
 
                                       AverageOrderValue = (
                                         from TotalRevenue in c

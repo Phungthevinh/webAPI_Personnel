@@ -7,6 +7,6 @@
     "\\Services",
     "\\Services\\Interfaces"
   ],
-  "SelectedNode": "\\WebAPI.sln",
+  "SelectedNode": "\\Services\\dbContext.cs",
   "PreviewInSolutionExplorer": false
 }

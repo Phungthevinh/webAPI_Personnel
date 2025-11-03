@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Services\\KOCAnalyticsService.cs",
               "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\KOCAnalyticsService.cs",
               "RelativeToolTip": "Services\\KOCAnalyticsService.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAYwB8AAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwDEAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-30T08:44:08.772Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "DTOs\\KOC\\KOCDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T07:36:17.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T07:36:17.249Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Services\\dbContext.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAIwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-30T08:21:21.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-30T08:21:21.013Z"
             }
           ]
         }

@@ -13,6 +13,12 @@ namespace WebAPI.routers
                 KOCAnalyticsController kOCAnalytics = new KOCAnalyticsController(dbContext);
                 return kOCAnalytics.GetKOCReport();
             });
+
+            app.MapGet("/hoa-hong-cho-koc", (dbContext dbContext) =>
+            {
+                commissionService commissionService = new commissionService(dbContext);
+                return commissionService.commissionForKoc();
+            });
         }
     }
 }

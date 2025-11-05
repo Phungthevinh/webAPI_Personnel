@@ -1,4 +1,5 @@
-﻿using WebAPI.DTOs.KOC;
+﻿using System.Security.Claims;
+using WebAPI.DTOs.KOC;
 
 namespace WebAPI.Services
 {
@@ -11,7 +12,7 @@ namespace WebAPI.Services
         }
 
         // hoa hồng của KOC theo từng tháng
-        public async Task<IResult> commissionForKoc()
+        public async Task<IResult> commissionForKoc(ClaimsPrincipal claims)
         {
             try
             {

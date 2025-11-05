@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 using WebAPI.Controllers;
 using WebAPI.Services;
 
@@ -14,10 +15,10 @@ namespace WebAPI.routers
                 return kOCAnalytics.GetKOCReport();
             });
 
-            app.MapGet("/hoa-hong-cho-koc", (dbContext dbContext) =>
+            app.MapGet("/hoa-hong-cho-koc", [Authorize] (dbContext dbContext, ClaimsPrincipal claims) =>
             {
                 commissionService commissionService = new commissionService(dbContext);
-                return commissionService.commissionForKoc();
+                return commissionService.commissionForKoc(claims);
             });
         }
     }

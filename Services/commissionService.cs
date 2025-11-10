@@ -12,20 +12,27 @@ namespace WebAPI.Services
         }
 
         // hoa hồng của KOC theo từng tháng
-        public async Task<IResult> commissionForKoc(ClaimsPrincipal claims)
+        public async Task<IResult> commissionForKoc(ClaimsPrincipal claims, DateTime dateTime)
         {
             try
             {
-                var targetMonth = new DateTime(2025, 10, 01).ToUniversalTime();
+                var targetMonth = dateTime.ToUniversalTime();
                 var nextMonth = targetMonth.AddMonths(1).ToUniversalTime();
                 var commissionKoc = from commission in _dbContext.used_discount_codes
                                     where commission.used_at >= targetMonth && commission.used_at < nextMonth
-                                    select commission;
+                                    group commission by commission.code into g
+                                    select new KOCCommissionDto
+                                    {
+                                        
+                                        TotalRevenue = g.Sum(g => g.order_value),
+                                      
+                                    };
 
                 return Results.Ok(commissionKoc);
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
-                return Results.BadRequest(ex.Message);
+                return Results.BadRequest(ex);
             }
         }
     }

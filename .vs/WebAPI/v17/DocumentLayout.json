@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\commissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\commissionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\dtos\\koc\\totalrevenuedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:dtos\\koc\\totalrevenuedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\dtos\\koc\\koccommissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:dtos\\koc\\koccommissiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\revenuerouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\revenuerouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\campaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\campaignscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\revenuecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\kocanalyticsrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\kocanalyticsrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\totalrevenueservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\totalrevenueservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KOCCommissionDto.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\KOCCommissionDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\KOC\\KOCCommissionDto.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\KOCCommissionDto.cs",
-              "RelativeToolTip": "DTOs\\KOC\\KOCCommissionDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "TotalRevenueDto.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\TotalRevenueDto.cs",
+              "RelativeDocumentMoniker": "DTOs\\KOC\\TotalRevenueDto.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\TotalRevenueDto.cs",
+              "RelativeToolTip": "DTOs\\KOC\\TotalRevenueDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T02:29:17.047Z"
+              "WhenOpened": "2025-11-12T09:53:17.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RevenueRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\RevenueRouter.cs",
+              "RelativeDocumentMoniker": "routers\\RevenueRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\RevenueRouter.cs",
+              "RelativeToolTip": "routers\\RevenueRouter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T09:49:21.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "campaignsController.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\campaignsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\campaignsController.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\campaignsController.cs",
-              "RelativeToolTip": "Controllers\\campaignsController.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAApwEcAAAAjAAAAAAAAAA==",
+              "Title": "RevenueController.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\RevenueController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RevenueController.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\RevenueController.cs",
+              "RelativeToolTip": "Controllers\\RevenueController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAMwBsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T01:36:28.73Z"
+              "WhenOpened": "2025-11-12T09:36:03.468Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "kOCAnalyticsRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\kOCAnalyticsRouter.cs",
-              "RelativeDocumentMoniker": "routers\\kOCAnalyticsRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\kOCAnalyticsRouter.cs",
-              "RelativeToolTip": "routers\\kOCAnalyticsRouter.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAcwBQAAABMAAAAAAAAAA==",
+              "Title": "TotalRevenueServices.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\TotalRevenueServices.cs",
+              "RelativeDocumentMoniker": "Services\\TotalRevenueServices.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\TotalRevenueServices.cs",
+              "RelativeToolTip": "Services\\TotalRevenueServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T01:14:53.118Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "commissionService.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\commissionService.cs",
-              "RelativeDocumentMoniker": "Services\\commissionService.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\commissionService.cs",
-              "RelativeToolTip": "Services\\commissionService.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAApwBkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T08:15:29.669Z",
+              "WhenOpened": "2025-11-12T09:26:29.361Z",
               "EditorCaption": ""
             }
           ]

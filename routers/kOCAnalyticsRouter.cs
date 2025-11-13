@@ -15,11 +15,6 @@ namespace WebAPI.routers
                 return kOCAnalytics.GetKOCReport();
             });
 
-            app.MapGet("/hoa-hong-cho-koc", [Authorize] (dbContext dbContext, ClaimsPrincipal claims, DateTime dateTime) =>
-            {
-                commissionService commissionService = new commissionService(dbContext);
-                return commissionService.commissionForKoc(claims, dateTime);
-            });
         }
     }
 }

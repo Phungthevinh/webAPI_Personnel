@@ -8,4 +8,4 @@ namespace WebAPI.Services.Interfaces
         //lấy doanh thu mà koc đem về trong 1 tháng
         public List<TotalRevenueDto> GetTotalRevenueByMonth(DateTime dateTime);
     }
-}
+}   

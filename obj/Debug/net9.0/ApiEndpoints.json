@@ -112,16 +112,16 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_2",
-    "RelativePath": "gia-tri-ma-giam",
-    "HttpMethod": "POST",
+    "ContainingType": "WebAPI.routers.RevenueRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
+    "RelativePath": "doanh-so-1-thang-cua-tung-koc-va-su-kien",
+    "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usedDiscountCode",
-        "Type": "WebAPI.DTOs.used_discount_code.usedDiscountCode",
+        "Name": "dateTime",
+        "Type": "System.DateTime",
         "IsRequired": true
       }
     ],
@@ -134,16 +134,16 @@
     ]
   },
   {
-    "ContainingType": "WebAPI.routers.kOCAnalyticsRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_1",
-    "RelativePath": "hoa-hong-cho-koc",
-    "HttpMethod": "GET",
+    "ContainingType": "WebAPI.routers.Discount_CodesRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_2",
+    "RelativePath": "gia-tri-ma-giam",
+    "HttpMethod": "POST",
     "IsController": false,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dateTime",
-        "Type": "System.DateTime",
+        "Name": "usedDiscountCode",
+        "Type": "WebAPI.DTOs.used_discount_code.usedDiscountCode",
         "IsRequired": true
       }
     ],

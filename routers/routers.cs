@@ -17,6 +17,7 @@ namespace WebAPI.routers
             campaignsRouter campaignsRouter = new campaignsRouter(app);
             usedDiscountCodeRouter usedDiscountCodeRouter = new usedDiscountCodeRouter(app);
             kOCAnalyticsRouter kOCAnalyticsRouter = new kOCAnalyticsRouter(app);
+            RevenueRouter revenueRouter = new RevenueRouter(app);
         }
     }
 }

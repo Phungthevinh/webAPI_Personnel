@@ -114,7 +114,7 @@
   {
     "ContainingType": "WebAPI.routers.RevenueRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_0",
-    "RelativePath": "doanh-so-1-thang-cua-tung-koc-va-su-kien",
+    "RelativePath": "doanh-so-1-thang-cua-tung-koc",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,

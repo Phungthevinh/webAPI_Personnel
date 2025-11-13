@@ -14,7 +14,6 @@ namespace WebAPI.Controllers
         /**
          * tính toán doanh thu 1 tháng 1 KOC mang về cho tổng đơn hàng
         **/
-
         public async Task<IResult> TotalRevenue(DateTime dateTime)
         {
             try

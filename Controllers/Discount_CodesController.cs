@@ -89,9 +89,18 @@ namespace WebAPI.Controllers
             {
                 DiscountUsageChecker DUC = new DiscountUsageChecker(_db);
                 IDiscountCodeUsageRepository IDUC = DUC;
+
                 bool result = await IDUC.HasUserUsedCodeAsync(usedDiscountCode);
+                bool checkCodeTime = await IDUC.checkCouponCodeExpirationDate(usedDiscountCode);
+
+                //kiểm tra người dùng đã sử dụng mã hay ko
                 if (result)
                     return Results.BadRequest(422);
+
+                //kiểm tra mã còn hạn hay ko
+                if (!checkCodeTime)
+                    return Results.BadRequest(422);
+
                 var giatri = from discount_code in _db.discount_codes
                              where discount_code.code == usedDiscountCode.code
                              join campaign in _db.campaigns on discount_code.campaign_id equals campaign.id

@@ -23,7 +23,7 @@ namespace WebAPI.routers
                 Discount_CodesController xemmagiamgiavasukien = new Discount_CodesController(dbContext);
                 return xemmagiamgiavasukien.maGiamGiaTuongUngSuKien(kol_id);
             });
-            //trả về giá trị giảm giá và ktra mã đó đã đc khách hàng sử dụng chưa khi khách hàng acp mã
+            //trả về giá trị giảm giá và ktra mã đó đã đc khách hàng sử dụng chưa khi khách hàng acp mã và thời hạn mã
             app.MapPost("/gia-tri-ma-giam", (dbContext dbContext, usedDiscountCode usedDiscountCode) =>
             {
                 Discount_CodesController giaTriMaGiam = new Discount_CodesController(dbContext);

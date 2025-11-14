@@ -29,6 +29,7 @@ namespace WebAPI.Services
                                    KOCId = g.Select(g => g.discount_Codes.kol_id).FirstOrDefault(),
                                    KOCName = g.Select(g => g.discount_Codes.user.full_name).FirstOrDefault()
                                };
+            var
             
             return totalRevenue.ToList();
         }

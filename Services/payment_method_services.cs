@@ -18,8 +18,8 @@ namespace WebAPI.Services
         {
             try
             {
-                var email = claims.FindFirstValue("email");
-                Console.WriteLine(email);
+                var username = claims.Identity.Name;
+               
                 //_dbContext.Add(new payment_Methods
                 //{
                 //    method_type = paymentMethodCreateDto.method_type,

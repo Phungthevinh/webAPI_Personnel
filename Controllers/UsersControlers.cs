@@ -134,6 +134,7 @@ namespace WebAPI.Controllers
                 new Claim(ClaimTypes.Name, user.username),
                 new Claim(ClaimTypes.Email, user.email),
                 new Claim(ClaimTypes.Role, role.name)
+                
                 };
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {

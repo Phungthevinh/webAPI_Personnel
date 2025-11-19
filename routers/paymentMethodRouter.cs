@@ -13,7 +13,7 @@ namespace WebAPI.routers
         {
             app.MapPost("them-thong-tin-tai-khoan-ngan-hang",[Authorize] (PaymentMethodCreateDto paymentMethodCreateDto, dbContext dbContext, ClaimsPrincipal claimsPrincipal) =>
             {
-                //Console.WriteLine(claimsPrincipal.Identity.Name);
+
                 paymentMethodController paymentMethodController = new paymentMethodController(dbContext);
 
                 return paymentMethodController.savePaymentMethod(paymentMethodCreateDto, claimsPrincipal);

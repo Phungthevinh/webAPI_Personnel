@@ -7,6 +7,6 @@
     "\\Services",
     "\\Services\\Interfaces"
   ],
-  "SelectedNode": "\\routers\\paymentMethodRouter.cs",
+  "SelectedNode": "\\Controllers\\UsersControlers.cs",
   "PreviewInSolutionExplorer": false
 }

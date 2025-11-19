@@ -469,6 +469,28 @@
     ]
   },
   {
+    "ContainingType": "WebAPI.routers.paymentMethodRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_0",
+    "RelativePath": "them-thong-tin-tai-khoan-ngan-hang",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "paymentMethodCreateDto",
+        "Type": "WebAPI.DTOs.payment_method.PaymentMethodCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_3",
     "RelativePath": "thong-tin-nguoi-dung-kem-chuc-vu",

@@ -22,6 +22,7 @@ namespace WebAPI.models
         public List<KOL_Profiles> KOL_Profile { get; set; } = new();
         public List<user_roles> user_roles { get; set; } = new();
         public List<discount_codes> discount_Codes { get; set; } = new();
+        public List<payment_Methods> payment_Methods { get; set; } = new();
 
     }
     //đăng nhập

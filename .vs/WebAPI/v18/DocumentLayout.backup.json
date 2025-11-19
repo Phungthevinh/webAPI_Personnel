@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\discount_codescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\discount_codescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\paymentmethodrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\paymentmethodrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\discountusagechecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\discountusagechecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\discount_codesrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\interfaces\\idiscountcodeusagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\interfaces\\idiscountcodeusagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\paymentmethodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\paymentmethodcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\payment_method_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\payment_method_services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +35,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Discount_CodesRouter.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
-              "RelativeDocumentMoniker": "routers\\Discount_CodesRouter.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\Discount_CodesRouter.cs",
-              "RelativeToolTip": "routers\\Discount_CodesRouter.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIAywBoAAABSAAAAAAAAAA==",
+              "Title": "UsersRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
+              "RelativeDocumentMoniker": "routers\\UsersRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
+              "RelativeToolTip": "routers\\UsersRouter.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwCAAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:31:47.745Z",
+              "WhenOpened": "2025-11-19T10:04:15.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Discount_CodesController.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\Discount_CodesController.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\Discount_CodesController.cs",
-              "RelativeToolTip": "Controllers\\Discount_CodesController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAowGAAAAAAAAAAAAAAAA==",
+              "Title": "paymentMethodRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\paymentMethodRouter.cs",
+              "RelativeDocumentMoniker": "routers\\paymentMethodRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\paymentMethodRouter.cs",
+              "RelativeToolTip": "routers\\paymentMethodRouter.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:35:35.233Z",
+              "WhenOpened": "2025-11-19T09:51:32.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DiscountUsageChecker.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\DiscountUsageChecker.cs",
-              "RelativeDocumentMoniker": "Services\\DiscountUsageChecker.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\DiscountUsageChecker.cs",
-              "RelativeToolTip": "Services\\DiscountUsageChecker.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAnwB0AAAAtAAAAAAAAAA==",
+              "Title": "UsersControlers.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\UsersControlers.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsersControlers.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\UsersControlers.cs",
+              "RelativeToolTip": "Controllers\\UsersControlers.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAmwLEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:47:02.126Z",
+              "WhenOpened": "2025-11-19T09:36:40.031Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IDiscountCodeUsageRepository.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IDiscountCodeUsageRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAwAAAAAAAAAA==",
+              "Title": "paymentMethodController.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\paymentMethodController.cs",
+              "RelativeDocumentMoniker": "Controllers\\paymentMethodController.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\paymentMethodController.cs",
+              "RelativeToolTip": "Controllers\\paymentMethodController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAewBMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T06:48:05.969Z",
+              "WhenOpened": "2025-11-19T09:40:26.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "payment_method_services.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\payment_method_services.cs",
+              "RelativeDocumentMoniker": "Services\\payment_method_services.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\payment_method_services.cs",
+              "RelativeToolTip": "Services\\payment_method_services.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAIwBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T07:31:37.32Z",
               "EditorCaption": ""
             }
           ]

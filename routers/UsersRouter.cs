@@ -41,7 +41,15 @@ namespace WebAPI.routers
                 return nguoiDungVaChucVu.tatCaNguoiDungVaThongTinCuaNguoiDung();
             });
 
-            app.MapGet("/test", () => "xin chao");
+            // lấy ra số lượng sử dụng mã giảm giá trong tháng và doanh thu mang về trong tháng
+            app.MapGet("/doanh-thu-KOC", [Authorize] (dbContext dbContext, ClaimsPrincipal claims) =>
+            {
+                KOL_ProfilesController kOL_ProfilesController = new KOL_ProfilesController(dbContext);
+                return kOL_ProfilesController.CouponReportsController(claims);
+            });
+
+
+            app.MapGet("/", () => "xin chao");
         }
     }
 }

@@ -1,5 +1,23 @@
 [
   {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_5",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "WebAPI.routers.chatAIRouter\u002B\u003C\u003Ec",
     "Method": "\u003C.ctor\u003Eb__0_4",
     "RelativePath": "chatAI",
@@ -125,6 +143,22 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
+    "Method": "\u003C.ctor\u003Eb__0_4",
+    "RelativePath": "doanh-thu-KOC",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Void",
@@ -292,24 +326,6 @@
       {
         "Type": "System.Void",
         "MediaTypes": [],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "WebAPI.routers.UsersRouter\u002B\u003C\u003Ec",
-    "Method": "\u003C.ctor\u003Eb__0_4",
-    "RelativePath": "test",
-    "HttpMethod": "GET",
-    "IsController": false,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.String",
-        "MediaTypes": [
-          "text/plain"
-        ],
         "StatusCode": 200
       }
     ]

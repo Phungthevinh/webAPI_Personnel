@@ -16,6 +16,8 @@
 //
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
+using System.Security.Claims;
+using WebAPI.DTOs.used_discount_code;
 using WebAPI.models;
 using WebAPI.Services;
 
@@ -50,9 +52,21 @@ namespace WebAPI.Controllers
         }
 
         //xem tất cả các mã và số lượng sử dụng mã  của từng KOC
+        public async Task<IResult> CouponReportsController(ClaimsPrincipal claims)
+        {
+            try
+            {
+                KocPerformanceService kocPerformanceService = new KocPerformanceService(_dbContext);
+                var koc = await kocPerformanceService.getCouponUsageSummary(claims);
+                return Results.Ok(koc);
+            }catch(Exception ex)
+            {
+                return Results.BadRequest(ex.Message);
+            }
+        }
         //xem doanh thu mang về của từng KOC
         //xem số tiền chiếc khấu, và % chiếc khấu cho từng KOC
-         
+
 
     }
 }

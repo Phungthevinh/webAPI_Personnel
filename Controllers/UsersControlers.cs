@@ -133,8 +133,8 @@ namespace WebAPI.Controllers
                 {
                 new Claim(ClaimTypes.Name, user.username),
                 new Claim(ClaimTypes.Email, user.email),
-                new Claim(ClaimTypes.Role, role.name)
-                
+                new Claim(ClaimTypes.Role, role.name),
+                new Claim(ClaimTypes.NameIdentifier, user.id.ToString()),
                 };
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {

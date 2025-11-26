@@ -52,12 +52,12 @@ namespace WebAPI.Controllers
         }
 
         //xem tất cả các mã và số lượng sử dụng mã  của từng KOC
-        public async Task<IResult> CouponReportsController(ClaimsPrincipal claims)
+        public async Task<IResult> CouponReportsController(ClaimsPrincipal claims, DateTime date)
         {
             try
             {
                 KocPerformanceService kocPerformanceService = new KocPerformanceService(_dbContext);
-                var koc = await kocPerformanceService.getCouponUsageSummary(claims);
+                var koc = await kocPerformanceService.getCouponUsageSummary(claims, date);
                 return Results.Ok(koc);
             }catch(Exception ex)
             {

@@ -42,10 +42,10 @@ namespace WebAPI.routers
             });
 
             // lấy ra số lượng sử dụng mã giảm giá trong tháng và doanh thu mang về trong tháng
-            app.MapGet("/doanh-thu-KOC", [Authorize] (dbContext dbContext, ClaimsPrincipal claims) =>
+            app.MapGet("/doanh-thu-KOC", [Authorize] (dbContext dbContext, ClaimsPrincipal claims, DateTime date) =>
             {
                 KOL_ProfilesController kOL_ProfilesController = new KOL_ProfilesController(dbContext);
-                return kOL_ProfilesController.CouponReportsController(claims);
+                return kOL_ProfilesController.CouponReportsController(claims, date);
             });
 
 

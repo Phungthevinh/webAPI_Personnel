@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "D:\\webBEc#\\webAPI_Personnel\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:controllers\\userscontrolers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\services\\kocperformanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:services\\kocperformanceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\dtos\\koc\\kocrevenuedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:dtos\\koc\\kocrevenuedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|solutionrelative:routers\\usersrouter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B57ECE49-2128-43E9-95FB-DFE8F31B3523}|WebAPI.csproj|d:\\webbec#\\webapi_personnel\\controllers\\kol_profilescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,53 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersControlers.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\UsersControlers.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsersControlers.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\UsersControlers.cs",
-              "RelativeToolTip": "Controllers\\UsersControlers.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAgwIgAAABJAAAAAAAAAA==",
+              "Title": "UsersRouter.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
+              "RelativeDocumentMoniker": "routers\\UsersRouter.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\routers\\UsersRouter.cs",
+              "RelativeToolTip": "routers\\UsersRouter.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T07:21:19.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KOL_ProfilesController.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\KOL_ProfilesController.cs",
-              "RelativeDocumentMoniker": "Controllers\\KOL_ProfilesController.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\KOL_ProfilesController.cs",
-              "RelativeToolTip": "Controllers\\KOL_ProfilesController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwD0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T03:45:59.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KOCRevenueDto.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\KOCRevenueDto.cs",
-              "RelativeDocumentMoniker": "DTOs\\KOC\\KOCRevenueDto.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\DTOs\\KOC\\KOCRevenueDto.cs",
-              "RelativeToolTip": "DTOs\\KOC\\KOCRevenueDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T03:45:20.07Z",
+              "WhenOpened": "2025-11-26T08:13:30.986Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "KocPerformanceService.cs",
-              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Services\\KocPerformanceService.cs",
-              "RelativeDocumentMoniker": "Services\\KocPerformanceService.cs",
-              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Services\\KocPerformanceService.cs",
-              "RelativeToolTip": "Services\\KocPerformanceService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBMAAAAmAAAAAAAAAA==",
+              "Title": "KOL_ProfilesController.cs",
+              "DocumentMoniker": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\KOL_ProfilesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\KOL_ProfilesController.cs",
+              "ToolTip": "D:\\webBEc#\\webAPI_Personnel\\Controllers\\KOL_ProfilesController.cs",
+              "RelativeToolTip": "Controllers\\KOL_ProfilesController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T01:32:17.609Z",
+              "WhenOpened": "2025-11-26T08:13:15.245Z",
               "EditorCaption": ""
             }
           ]

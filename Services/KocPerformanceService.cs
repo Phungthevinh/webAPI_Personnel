@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Security.Claims;
 using WebAPI.DTOs.KOC;
 using WebAPI.Services.Interfaces;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace WebAPI.Services
 {
@@ -12,21 +14,25 @@ namespace WebAPI.Services
         {
             _dbContext = dbContext;
         }
-        public async Task<KOCReportDto> getCouponUsageSummary(ClaimsPrincipal claims, long id = 6)
+        public async Task<KOCReportDto> getCouponUsageSummary(ClaimsPrincipal claims, DateTime date)
         {
             KOCReportDto kOCReportDto = new KOCReportDto();
             var userName = claims.Identity.Name;
-            var userId = claims.FindFirst("id");
-            Console.WriteLine(userId);
+            var targetMonth = date.ToUniversalTime();
 
+            var userID = _dbContext.users
+                .Where(c => c.username == userName)
+                .FirstOrDefault();
+           
             var Revenues = await (
                     from code in _dbContext.used_discount_codes
+                    where code.used_at >= targetMonth && code.used_at < targetMonth.AddMonths(1)
                     group code by code.discount_Codes.kol_id into c
-                    where c.Key == id
+                    where c.Key == userID.id
                     select new KOCRevenueDto
                     {
                         TotalOrders = c.Select(c => c.code).Count(),
-                        KOCId = id,
+                        KOCId = c.Key,
                         TotalRevenue = c.Sum(c => c.discount_amount_applied),
                         AverageOrderValue = c.Average(c => c.order_value),
                         KOCName = userName
